@@ -1,0 +1,379 @@
+{% set body_class = "profile-history-page" %}
+{% extends "./_layout.html" %}
+{% block content %}
+
+<main class="profile-history">
+
+  <div class="pagination">
+    <ul class="pagination__list">
+      <li class="pagination__item">
+        <a href="/">Home</a>
+      </li>
+      <li class="pagination__item">
+        <a href="">advice for masters</a>
+      </li>
+      <li class="pagination__item">
+        <a href="">trends</a>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="profile-tabs-fluid">
+    <div class="profile-tabs-centered">
+      <a href="/profile-info.html" class="profile-tabs-item">
+        Profile info
+      </a>
+      <a href="/profile-favorite.html" class="profile-tabs-item">
+        favourite
+      </a>
+      <a href="/profile-history.html" class="profile-tabs-item active">
+        shopping history
+      </a>
+    </div>
+  </div>
+
+
+  <!-- <div class="profile-history-container-fluid">
+    <div class="profile-history-container-centered">
+      <div class="profile-history-item">
+        <div class="profile-history-item-name">
+          ORDER #1212
+        </div>
+        <div class="profile-history-item-top">
+          <div class="profile-history-item-top-images">
+            <div class="profile-history-item-top-images-img">
+              <div class="profile-history-item-top-images-overlay"></div>
+              <div class="profile-history-item-top-images-num">+4</div>
+              <img src="/images/img13.jpg" alt="img">
+            </div>
+            <div class="profile-history-item-top-images-img">
+              <div class="profile-history-item-top-images-overlay"></div>
+              <div class="profile-history-item-top-images-num">+4</div>
+              <img src="/images/img14.jpg" alt="img">
+            </div>
+            <div class="profile-history-item-top-images-img">
+              <div class="profile-history-item-top-images-overlay"></div>
+              <div class="profile-history-item-top-images-num">+4</div>
+              <img src="/images/img13.jpg" alt="img">
+            </div>
+            <div class="profile-history-item-top-images-img overlay">
+              <div class="profile-history-item-top-images-overlay"></div>
+              <div class="profile-history-item-top-images-num">+4</div>
+              <img src="/images/img14.jpg" alt="img">
+            </div>
+          </div>
+          <div class="profile-history-item-top-right">
+            <div class="profile-history-item-top-right-up">
+              <div class="profile-history-item-top-right-up-date">
+                <span>Date of order: </span> 3/12/2021
+              </div>
+              <div class="profile-history-item-top-right-up-info">
+                <div class="profile-history-item-top-right-up-info-icon">
+                  <img src="/images/icon16.svg" alt="img">
+                  <div class="profile-history-item-top-right-up-info-tip">
+                    <img src="/images/icon16.svg" alt="img">
+                    <span>
+                      product availability
+                      and prices are subject
+                      to change.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile-history-item-top-right-order-again">
+              Order again
+            </div>
+          </div>
+        </div>
+        <div class="profile-history-item-detalis-btn">
+          <span>order details</span>
+          <img src="/images/icon17.svg" alt="img">
+        </div>
+        <div class="profile-history-item-drop">
+          <div class="profile-history-item-drop-item">
+            <div class="profile-history-item-drop-item-left">
+              Всього товарів:
+            </div>
+            <div class="profile-history-item-drop-item-right">
+              6
+            </div>
+          </div>
+          <div class="profile-history-item-drop-item">
+            <div class="profile-history-item-drop-item-left">
+              Total:
+            </div>
+            <div class="profile-history-item-drop-item-right">
+              $ 85
+            </div>
+          </div>
+          <div class="profile-history-item-drop-item">
+            <div class="profile-history-item-drop-item-left">
+              Selected type of delivery
+            </div>
+            <div class="profile-history-item-drop-item-right">
+              Courier DHL
+            </div>
+          </div>
+          <div class="profile-history-item-drop-item">
+            <div class="profile-history-item-drop-item-left">
+              Delivery address
+            </div>
+            <div class="profile-history-item-drop-item-right">
+              Nowy Świat 41A,
+              00-042 Warszawa, Poland
+            </div>
+          </div>
+          <div class="profile-history-item-drop-item">
+            <div class="profile-history-item-drop-item-left">
+              Selected payment method
+            </div>
+            <div class="profile-history-item-drop-item-right">
+              Visa, mastercard, apple pay
+            </div>
+          </div>
+          <div class="profile-history-item-drop-item">
+            <div class="profile-history-item-drop-item-left">
+              Comment to your order
+            </div>
+            <div class="profile-history-item-drop-item-right">
+              Lorem ipsum dolor sit amet consectetur. Elit arcu at ullamcorper pellentesque fames arcu. ullamcorper
+              pellentesque fames arcu.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-history-item">
+        <div class="profile-history-item-name">
+          ORDER #1212
+        </div>
+        <div class="profile-history-item-top">
+          <div class="profile-history-item-top-images">
+            <div class="profile-history-item-top-images-img">
+              <div class="profile-history-item-top-images-overlay"></div>
+              <div class="profile-history-item-top-images-num">+4</div>
+              <img src="/images/img13.jpg" alt="img">
+            </div>
+            <div class="profile-history-item-top-images-img">
+              <div class="profile-history-item-top-images-overlay"></div>
+              <div class="profile-history-item-top-images-num">+4</div>
+              <img src="/images/img14.jpg" alt="img">
+            </div>
+            <div class="profile-history-item-top-images-img">
+              <div class="profile-history-item-top-images-overlay"></div>
+              <div class="profile-history-item-top-images-num">+4</div>
+              <img src="/images/img13.jpg" alt="img">
+            </div>
+            <div class="profile-history-item-top-images-img overlay">
+              <div class="profile-history-item-top-images-overlay"></div>
+              <div class="profile-history-item-top-images-num">+4</div>
+              <img src="/images/img14.jpg" alt="img">
+            </div>
+          </div>
+          <div class="profile-history-item-top-right">
+            <div class="profile-history-item-top-right-up">
+              <div class="profile-history-item-top-right-up-date">
+                <span>Date of order: </span> 3/12/2021
+              </div>
+              <div class="profile-history-item-top-right-up-info">
+                <div class="profile-history-item-top-right-up-info-icon">
+                  <img src="/images/icon16.svg" alt="img">
+                  <div class="profile-history-item-top-right-up-info-tip">
+                    <img src="/images/icon16.svg" alt="img">
+                    <span>
+                      product availability
+                      and prices are subject
+                      to change.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile-history-item-top-right-order-again">
+              Order again
+            </div>
+          </div>
+        </div>
+        <div class="profile-history-item-detalis-btn">
+          <span>order details</span>
+          <img src="/images/icon17.svg" alt="img">
+        </div>
+        <div class="profile-history-item-drop">
+          <div class="profile-history-item-drop-item">
+            <div class="profile-history-item-drop-item-left">
+              Всього товарів:
+            </div>
+            <div class="profile-history-item-drop-item-right">
+              6
+            </div>
+          </div>
+          <div class="profile-history-item-drop-item">
+            <div class="profile-history-item-drop-item-left">
+              Total:
+            </div>
+            <div class="profile-history-item-drop-item-right">
+              $ 85
+            </div>
+          </div>
+          <div class="profile-history-item-drop-item">
+            <div class="profile-history-item-drop-item-left">
+              Selected type of delivery
+            </div>
+            <div class="profile-history-item-drop-item-right">
+              Courier DHL
+            </div>
+          </div>
+          <div class="profile-history-item-drop-item">
+            <div class="profile-history-item-drop-item-left">
+              Delivery address
+            </div>
+            <div class="profile-history-item-drop-item-right">
+              Nowy Świat 41A,
+              00-042 Warszawa, Poland
+            </div>
+          </div>
+          <div class="profile-history-item-drop-item">
+            <div class="profile-history-item-drop-item-left">
+              Selected payment method
+            </div>
+            <div class="profile-history-item-drop-item-right">
+              Visa, mastercard, apple pay
+            </div>
+          </div>
+          <div class="profile-history-item-drop-item">
+            <div class="profile-history-item-drop-item-left">
+              Comment to your order
+            </div>
+            <div class="profile-history-item-drop-item-right">
+              Lorem ipsum dolor sit amet consectetur. Elit arcu at ullamcorper pellentesque fames arcu. ullamcorper
+              pellentesque fames arcu.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-history-item">
+        <div class="profile-history-item-name">
+          ORDER #1212
+        </div>
+        <div class="profile-history-item-top">
+          <div class="profile-history-item-top-images">
+            <div class="profile-history-item-top-images-img">
+              <div class="profile-history-item-top-images-overlay"></div>
+              <div class="profile-history-item-top-images-num">+4</div>
+              <img src="/images/img13.jpg" alt="img">
+            </div>
+            <div class="profile-history-item-top-images-img">
+              <div class="profile-history-item-top-images-overlay"></div>
+              <div class="profile-history-item-top-images-num">+4</div>
+              <img src="/images/img14.jpg" alt="img">
+            </div>
+            <div class="profile-history-item-top-images-img">
+              <div class="profile-history-item-top-images-overlay"></div>
+              <div class="profile-history-item-top-images-num">+4</div>
+              <img src="/images/img13.jpg" alt="img">
+            </div>
+            <div class="profile-history-item-top-images-img overlay">
+              <div class="profile-history-item-top-images-overlay"></div>
+              <div class="profile-history-item-top-images-num">+4</div>
+              <img src="/images/img14.jpg" alt="img">
+            </div>
+          </div>
+          <div class="profile-history-item-top-right">
+            <div class="profile-history-item-top-right-up">
+              <div class="profile-history-item-top-right-up-date">
+                <span>Date of order: </span> 3/12/2021
+              </div>
+              <div class="profile-history-item-top-right-up-info">
+                <div class="profile-history-item-top-right-up-info-icon">
+                  <img src="/images/icon16.svg" alt="img">
+                  <div class="profile-history-item-top-right-up-info-tip">
+                    <img src="/images/icon16.svg" alt="img">
+                    <span>
+                      product availability
+                      and prices are subject
+                      to change.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile-history-item-top-right-order-again">
+              Order again
+            </div>
+          </div>
+        </div>
+        <div class="profile-history-item-detalis-btn">
+          <span>order details</span>
+          <img src="/images/icon17.svg" alt="img">
+        </div>
+        <div class="profile-history-item-drop">
+          <div class="profile-history-item-drop-item">
+            <div class="profile-history-item-drop-item-left">
+              Всього товарів:
+            </div>
+            <div class="profile-history-item-drop-item-right">
+              6
+            </div>
+          </div>
+          <div class="profile-history-item-drop-item">
+            <div class="profile-history-item-drop-item-left">
+              Total:
+            </div>
+            <div class="profile-history-item-drop-item-right">
+              $ 85
+            </div>
+          </div>
+          <div class="profile-history-item-drop-item">
+            <div class="profile-history-item-drop-item-left">
+              Selected type of delivery
+            </div>
+            <div class="profile-history-item-drop-item-right">
+              Courier DHL
+            </div>
+          </div>
+          <div class="profile-history-item-drop-item">
+            <div class="profile-history-item-drop-item-left">
+              Delivery address
+            </div>
+            <div class="profile-history-item-drop-item-right">
+              Nowy Świat 41A,
+              00-042 Warszawa, Poland
+            </div>
+          </div>
+          <div class="profile-history-item-drop-item">
+            <div class="profile-history-item-drop-item-left">
+              Selected payment method
+            </div>
+            <div class="profile-history-item-drop-item-right">
+              Visa, mastercard, apple pay
+            </div>
+          </div>
+          <div class="profile-history-item-drop-item">
+            <div class="profile-history-item-drop-item-left">
+              Comment to your order
+            </div>
+            <div class="profile-history-item-drop-item-right">
+              Lorem ipsum dolor sit amet consectetur. Elit arcu at ullamcorper pellentesque fames arcu. ullamcorper
+              pellentesque fames arcu.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="profile-history-empty">
+    <div class="profile-history-empty-text">
+      You have no shopping history yet
+    </div>
+    <a href="/" class="profile-history-empty-btn">
+      <span>go to the store</span>
+      <img src="/images/arrow10.svg" alt="i">
+    </a>
+  </div>
+
+
+</main>
+
+{% endblock %}

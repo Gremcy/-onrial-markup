@@ -1,0 +1,699 @@
+{% set body_class = "product-page" %}
+{% extends "./_layout.html" %}
+{% block content %}
+
+<main class="product-main">
+
+  <div class="pagination">
+    <ul class="pagination__list">
+      <li class="pagination__item">
+        <a href="/">Home</a>
+      </li>
+      <li class="pagination__item">
+        <a href="">advice for masters</a>
+      </li>
+      <li class="pagination__item">
+        <a href="">trends</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="poduct-fluid">
+    <div class="product-centered">
+      <div class="product-left">
+        <div class="product__carousel">
+          <!-- Swiper and EasyZoom plugins start -->
+          <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide easyzoom easyzoom--overlay">
+                <a href="/images/img29.jpg">
+                  <img src="/images/img29.jpg" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide easyzoom easyzoom--overlay">
+                <a href="/images/img30.jpg">
+                  <img src="/images/img30.jpg" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide easyzoom easyzoom--overlay">
+                <a href="/images/img31.jpg">
+                  <img src="/images/img31.jpg" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide easyzoom easyzoom--overlay">
+                <a href="/images/img29.jpg">
+                  <img src="/images/img29.jpg" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide easyzoom easyzoom--overlay">
+                <a href="/images/img30.jpg">
+                  <img src="/images/img30.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next">
+              <img src="/images/icon22.svg" alt="" />
+            </div>
+            <div class="swiper-button-prev">
+              <img src="/images/icon23.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/images/img29.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/img30.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/img31.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/img29.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/img30.jpg" alt="">
+              </div>
+            </div>
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+          <!-- Swiper and EasyZoom plugins end -->
+        </div>
+      </div>
+      <div class="product-right">
+        <div class="product-right-stock">
+          <img src="/images/icon24.svg" alt="img">
+          <span>в наявності</span>
+        </div>
+        <div class="product-right-out-stock">
+          <img src="/images/icon28.svg" alt="img">
+          <span>out of stock</span>
+        </div>
+        <div class="product-right-name">
+          Black lashes mix curl B
+          In one Length from 6-13 mm
+        </div>
+        <div class="product-right-options">
+          <div class="product-right-options-size">
+            B / 6 mm
+          </div>
+          <div class="product-right-options-price">
+            <div class="product-right-options-crossed-price">
+              $ 1 221
+            </div>
+            $ 1 221
+          </div>
+        </div>
+        <div class="product-right-select">
+          <div class="externat-form-select">
+            <select required class="select-css">
+              <option value="" disabled selected hidden>Lenght</option>
+              <option value="B / 6 mm">B / 6 mm</option>
+              <option value="B / 6 mm">B / 6 mm</option>
+              <option value="B / 6 mm">B / 6 mm</option>
+              <option value="B / 6 mm">B / 6 mm</option>
+              <option value="B / 6 mm">B / 6 mm</option>
+              <option value="B / 6 mm">B / 6 mm</option>
+              <option value="B / 6 mm">B / 6 mm</option>
+              <option value="B / 6 mm">B / 6 mm</option>
+              <option value="B / 6 mm">B / 6 mm</option>
+            </select>
+          </div>
+        </div>
+        <div class="product-right-info-settings">
+          <img src="/images/icon29.svg" alt="img">
+          <span>Вкажіть необхідні параметри</span>
+        </div>
+        <div class="product-right-btns">
+          <div class="product-right-quantity">
+            <div class="basket-item-product-quantity">
+              <div class="basket-item-product-quantity-less">
+                <span>-</span>
+              </div>
+              <input class="basket-item-product-quantity-input" type="number" value="1" min="1">
+              <div class="basket-item-product-quantity-more">
+                <span>+</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-right-add-btn">
+            add to cart
+          </div>
+        </div>
+        <div class="product-right-favourite">
+          <div class="product-right-favourite-icon">
+            <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.325 1C3.83188 1 1 3.86955 1 7.40914C1 13.8183 8.475 19.6448 12.5 21C16.525 19.6448 24 13.8183 24 7.40914C24 3.86955 21.1681 1 17.675 1C15.536 1 13.6442 2.07615 12.5 3.7233C11.9168 2.88149 11.1419 2.19448 10.2411 1.72044C9.34032 1.24639 8.34005 0.999274 7.325 1Z"
+                stroke="#424242" stroke-width="1.33177" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="product-right-favourite-text">
+            Add to favourite
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="products-about-fluid">
+    <div class="products-about-centered">
+      <div class="products-about-tabs">
+        <div class="tabs">
+          <div class="tabs__nav">
+            <div class="tabs__nav-btn" data-tab="#tab1"><span>Опис</span></div>
+            <div class="tabs__nav-btn" data-tab="#tab2"><span>Сертифікати</span></div>
+            <div class="tabs__nav-btn" data-tab="#tab3"><span>Відгуки</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="home-methods-right tabs__content">
+        <div class="tabs__item" id="tab1">
+          <p>Темно-коричневі вії Onrial мікс 0,07 мм</p>
+          <p>Нова серія вій в насиченому коричневому кольорі «гіркий шоколад».
+            <strong>М’які, легкі вії, комфортні в роботі.</strong>
+            У виробництві даної лінійки продукції використовується нове <em>волокно, яке дозволяє більш швидко і
+              комфортно</em>
+            формувати пучок.
+            Вії добре тримають вигин, не ламкі добре знімаються зі стрічки.
+            Коричневі вії чудово підійдуть блондинкам, а також для моделювання максимально природного погляду.
+            Упаковка вій містить 21 стрічку.
+            Також палетки Onrial відрізняються продуманим дизайном підкладки, містять повну інформацію про довжину вій,
+            мають спеціальний відривний клапан для комфортного зняття стрічок.</p>
+          <div class="product-about-composition">
+            <div class="product-about-composition-title">
+              Склад:
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et dignissim aenean auctor ac bibendum. Purus at
+              enim eget non euismod ut elementum sollicitudin. Cursus odio amet at magna neque orci. Lectus amet
+              ultrices ultrices varius ac enim, euismod. Eu quis imperdiet nibh non felis feugiat vulputate. Turpis
+              facilisis convallis sed quis. Metus, egestas tristique nunc tellus odio.
+              Sollicitudin tincidunt elit id leo at nunc consequat dignissim quis. Cursus amet vulputate ultricies sed.
+              Sit nulla morbi eget fermentum lacus. Sed aliquet molestie vestibulum tincidunt. Eros lacus dictum
+              tincidunt mauris, ac aenean.
+            </p>
+          </div>
+        </div>
+        <div class="tabs__item" id="tab2">
+          <div class="product-about-sertificats">
+            <a href="/" download class="product-about-sertificats-item">
+              <img src="/images/icon26.svg" alt="img">
+              <div class="product-about-sertificats-item-name">
+                Сертифікат
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et dignissim aenean auctor ac </span>
+              </div>
+            </a>
+            <a href="/" download class="product-about-sertificats-item">
+              <img src="/images/icon26.svg" alt="img">
+              <div class="product-about-sertificats-item-name">
+                Сертифікат
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et dignissim aenean auctor ac </span>
+              </div>
+            </a>
+            <a href="/" download class="product-about-sertificats-item">
+              <img src="/images/icon26.svg" alt="img">
+              <div class="product-about-sertificats-item-name">
+                Сертифікат
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et dignissim aenean auctor ac </span>
+              </div>
+            </a>
+            <a href="/" download class="product-about-sertificats-item">
+              <img src="/images/icon26.svg" alt="img">
+              <div class="product-about-sertificats-item-name">
+                Сертифікат
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et dignissim aenean auctor ac </span>
+              </div>
+            </a>
+            <a href="/" download class="product-about-sertificats-item">
+              <img src="/images/icon26.svg" alt="img">
+              <div class="product-about-sertificats-item-name">
+                Сертифікат
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et dignissim aenean auctor ac </span>
+              </div>
+            </a>
+            <a href="/" download class="product-about-sertificats-item">
+              <img src="/images/icon26.svg" alt="img">
+              <div class="product-about-sertificats-item-name">
+                Сертифікат
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et dignissim aenean auctor ac </span>
+              </div>
+            </a>
+            <a href="/" download class="product-about-sertificats-item">
+              <img src="/images/icon26.svg" alt="img">
+              <div class="product-about-sertificats-item-name">
+                Сертифікат
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et dignissim aenean auctor ac </span>
+              </div>
+            </a>
+            <a href="/" download class="product-about-sertificats-item">
+              <img src="/images/icon26.svg" alt="img">
+              <div class="product-about-sertificats-item-name">
+                Сертифікат
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et dignissim aenean auctor ac </span>
+              </div>
+            </a>
+            <a href="/" download class="product-about-sertificats-item">
+              <img src="/images/icon26.svg" alt="img">
+              <div class="product-about-sertificats-item-name">
+                Сертифікат
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et dignissim aenean auctor ac </span>
+              </div>
+            </a>
+            <a href="/" download class="product-about-sertificats-item">
+              <img src="/images/icon26.svg" alt="img">
+              <div class="product-about-sertificats-item-name">
+                Сертифікат
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et dignissim aenean auctor ac </span>
+              </div>
+            </a>
+            <a href="/" download class="product-about-sertificats-item">
+              <img src="/images/icon26.svg" alt="img">
+              <div class="product-about-sertificats-item-name">
+                Сертифікат
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et dignissim aenean auctor ac </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="tabs__item" id="tab3">
+          <div class="product-reviews">
+            <div class="product-reviews-leave-btn  js-modal-link" data-target="review-popup">
+              <span>leave a review</span>
+              <img src="/images/arrow9.svg" alt="img">
+            </div>
+            <div class="product-reviews-container">
+              <div class="product-reviews-item">
+                <div class="product-reviews-item-left">
+                  <div class="product-reviews-item-left-name">
+                    Olena
+                  </div>
+                  <div class="product-reviews-item-left-date">
+                    06/12/2022
+                  </div>
+                  <div class="product-reviews-item-left-stars">
+                    <div class="simple-rating">
+                      <div class="simple-rating__items">
+                        <input id="simple-rating__5" type="radio" class="simple-rating__item" name="simple-rating"
+                          value="5">
+                        <label for="simple-rating__5" class="simple-rating__label"></label>
+                        <input id="simple-rating__4" type="radio" class="simple-rating__item" name="simple-rating"
+                          value="4">
+                        <label for="simple-rating_4" class="simple-rating__label"></label>
+                        <input checked id="simple-rating__3" type="radio" class="simple-rating__item"
+                          name="simple-rating" value="3">
+                        <label for="simple-rating__3" class="simple-rating__label"></label>
+                        <input id="simple-rating__2" type="radio" class="simple-rating__item" name="simple-rating"
+                          value="2">
+                        <label for="simple-rating__2" class="simple-rating__label"></label>
+                        <input id="simple-rating__1" type="radio" class="simple-rating__item" name="simple-rating"
+                          value="1">
+                        <label for="simple-rating__1" class="simple-rating__label"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-reviews-item-right">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Eu tristique id amet at congue sed enim. Facilisi aliquam
+                    purus quam maecenas cursus in dolor mi. Pharetra tellus faucibus amet posuere. Scelerisque magna
+                    risus
+                    tincidunt feugiat venenatis vel adipiscing magna eget. Convallis bibendum pharetra cursus sed est
+                    blandit id platea fames. Eu sit sed nulla molestie nibh dignissim tellus. In pharetra porttitor urna
+                    nullam. Sit orci diam ut quis. Augue at non et tempor tristique velit. Dui ac suspendisse dui
+                    vulputate. Metus orci cursus id sem semper massa ultricies tempus. Sapien viverra semper purus
+                    vitae.
+                    Mauris feugiat odio sit eu posuere mi.
+                    </>
+                </div>
+              </div>
+              <div class="product-reviews-item">
+                <div class="product-reviews-item-left">
+                  <div class="product-reviews-item-left-name">
+                    Olena
+                  </div>
+                  <div class="product-reviews-item-left-date">
+                    06/12/2022
+                  </div>
+                  <div class="product-reviews-item-left-stars">
+                    <div class="simple-rating">
+                      <div class="simple-rating__items">
+                        <input id="simple-rating__5" type="radio" class="simple-rating__item" name="simple-rating"
+                          value="5">
+                        <label for="simple-rating__5" class="simple-rating__label"></label>
+                        <input id="simple-rating__4" type="radio" class="simple-rating__item" name="simple-rating"
+                          value="4">
+                        <label for="simple-rating_4" class="simple-rating__label"></label>
+                        <input checked id="simple-rating__3" type="radio" class="simple-rating__item"
+                          name="simple-rating" value="3">
+                        <label for="simple-rating__3" class="simple-rating__label"></label>
+                        <input id="simple-rating__2" type="radio" class="simple-rating__item" name="simple-rating"
+                          value="2">
+                        <label for="simple-rating__2" class="simple-rating__label"></label>
+                        <input id="simple-rating__1" type="radio" class="simple-rating__item" name="simple-rating"
+                          value="1">
+                        <label for="simple-rating__1" class="simple-rating__label"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-reviews-item-right">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Eu tristique id amet at congue sed enim. Facilisi aliquam
+                    purus quam maecenas cursus in dolor mi. Pharetra tellus faucibus amet posuere. Scelerisque magna
+                    risus
+                    tincidunt feugiat venenatis vel adipiscing magna eget. Convallis bibendum pharetra cursus sed est
+                    blandit id platea fames. Eu sit sed nulla molestie nibh dignissim tellus. In pharetra porttitor urna
+                    nullam. Sit orci diam ut quis. Augue at non et tempor tristique velit. Dui ac suspendisse dui
+                    vulputate. Metus orci cursus id sem semper massa ultricies tempus. Sapien viverra semper purus
+                    vitae.
+                    Mauris feugiat odio sit eu posuere mi.
+                    </>
+                </div>
+              </div>
+              <div class="product-reviews-item">
+                <div class="product-reviews-item-left">
+                  <div class="product-reviews-item-left-name">
+                    Olena
+                  </div>
+                  <div class="product-reviews-item-left-date">
+                    06/12/2022
+                  </div>
+                  <div class="product-reviews-item-left-stars">
+                    <div class="simple-rating">
+                      <div class="simple-rating__items">
+                        <input id="simple-rating__5" type="radio" class="simple-rating__item" name="simple-rating"
+                          value="5">
+                        <label for="simple-rating__5" class="simple-rating__label"></label>
+                        <input id="simple-rating__4" type="radio" class="simple-rating__item" name="simple-rating"
+                          value="4">
+                        <label for="simple-rating_4" class="simple-rating__label"></label>
+                        <input checked id="simple-rating__3" type="radio" class="simple-rating__item"
+                          name="simple-rating" value="3">
+                        <label for="simple-rating__3" class="simple-rating__label"></label>
+                        <input id="simple-rating__2" type="radio" class="simple-rating__item" name="simple-rating"
+                          value="2">
+                        <label for="simple-rating__2" class="simple-rating__label"></label>
+                        <input id="simple-rating__1" type="radio" class="simple-rating__item" name="simple-rating"
+                          value="1">
+                        <label for="simple-rating__1" class="simple-rating__label"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-reviews-item-right">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Eu tristique id amet at congue sed enim. Facilisi aliquam
+                    purus quam maecenas cursus in dolor mi. Pharetra tellus faucibus amet posuere. Scelerisque magna
+                    risus
+                    tincidunt feugiat venenatis vel adipiscing magna eget. Convallis bibendum pharetra cursus sed est
+                    blandit id platea fames. Eu sit sed nulla molestie nibh dignissim tellus. In pharetra porttitor urna
+                    nullam. Sit orci diam ut quis. Augue at non et tempor tristique velit. Dui ac suspendisse dui
+                    vulputate. Metus orci cursus id sem semper massa ultricies tempus. Sapien viverra semper purus
+                    vitae.
+                    Mauris feugiat odio sit eu posuere mi.
+                    </>
+                </div>
+              </div>
+              <div class="product-reviews-item">
+                <div class="product-reviews-item-left">
+                  <div class="product-reviews-item-left-name">
+                    Olena
+                  </div>
+                  <div class="product-reviews-item-left-date">
+                    06/12/2022
+                  </div>
+                  <div class="product-reviews-item-left-stars">
+                    <div class="simple-rating">
+                      <div class="simple-rating__items">
+                        <input id="simple-rating__5" type="radio" class="simple-rating__item" name="simple-rating"
+                          value="5">
+                        <label for="simple-rating__5" class="simple-rating__label"></label>
+                        <input id="simple-rating__4" type="radio" class="simple-rating__item" name="simple-rating"
+                          value="4">
+                        <label for="simple-rating_4" class="simple-rating__label"></label>
+                        <input checked id="simple-rating__3" type="radio" class="simple-rating__item"
+                          name="simple-rating" value="3">
+                        <label for="simple-rating__3" class="simple-rating__label"></label>
+                        <input id="simple-rating__2" type="radio" class="simple-rating__item" name="simple-rating"
+                          value="2">
+                        <label for="simple-rating__2" class="simple-rating__label"></label>
+                        <input id="simple-rating__1" type="radio" class="simple-rating__item" name="simple-rating"
+                          value="1">
+                        <label for="simple-rating__1" class="simple-rating__label"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-reviews-item-right">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Eu tristique id amet at congue sed enim. Facilisi aliquam
+                    purus quam maecenas cursus in dolor mi. Pharetra tellus faucibus amet posuere. Scelerisque magna
+                    risus
+                    tincidunt feugiat venenatis vel adipiscing magna eget. Convallis bibendum pharetra cursus sed est
+                    blandit id platea fames. Eu sit sed nulla molestie nibh dignissim tellus. In pharetra porttitor urna
+                    nullam. Sit orci diam ut quis. Augue at non et tempor tristique velit. Dui ac suspendisse dui
+                    vulputate. Metus orci cursus id sem semper massa ultricies tempus. Sapien viverra semper purus
+                    vitae.
+                    Mauris feugiat odio sit eu posuere mi.
+                    </>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-reviews-more">
+            <div class="product-reviews-more-text">
+              завантажити ще
+            </div>
+            <div class="product-reviews-more-icon">
+              <img src="/images/icon27.svg" alt="img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="profile-favorite-slider-fluid">
+    <div class="profile-favorite-slider-wrapper">
+      <div class="product-more-title">
+        Клієнти також обирають
+      </div>
+      <div class="profile-favorite-slider-arrows">
+        <div class="slick-prev">
+          <img src="/images/arrow-prev.svg" alt="img">
+        </div>
+        <div class="slick-next">
+          <img src="/images/arrow-next.svg" alt="img">
+        </div>
+      </div>
+      <div class="profile-favorite-slider">
+        <div class="profile-favorite-slider-item">
+          <div class="categories-card">
+            <div class="categories-card-item-top">
+              <div class="categories-card-item-top-discount">
+                <img src="/images/icon8.svg" alt="img">
+              </div>
+              <div class="categories-card-item-top-like">
+                <svg width="40" height="35" viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.7196 1.19971C6.13061 1.19971 1.59961 5.79098 1.59961 11.4543C1.59961 21.7089 13.5596 31.0313 19.9996 33.1997C26.4396 31.0313 38.3996 21.7089 38.3996 11.4543C38.3996 5.79098 33.8686 1.19971 28.2796 1.19971C24.8572 1.19971 21.8304 2.92155 19.9996 5.55699C19.0664 4.2101 17.8267 3.11088 16.3854 2.35241C14.9441 1.59394 13.3437 1.19855 11.7196 1.19971Z"
+                    stroke="#424242" stroke-width="2.13083" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <div class="categories-card-item-image">
+              <img src="/images/img12.png" alt="img">
+            </div>
+            <div class="categories-card-item-name">
+              Black lashes mix Black lashes mix Black lashes mix Black lashes mix Black lashes mix Black lashes mix
+              Black
+              lashes mix Black lashes mix
+            </div>
+            <div class="categories-card-item-type">
+              MIX B 0.07 6-13MM
+            </div>
+            <div class="categories-card-item-bottom">
+              <div class="categories-card-item-bottom-prices">
+                <div class="categories-card-item-bottom-crossed-price">
+                  $1221
+                </div>
+                <div class="categories-card-item-bottom-current-price">
+                  $1221
+                </div>
+              </div>
+              <div class="categories-card-item-bottom-cart-btn">
+                <img src="/images/bag.svg" alt="img">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="profile-favorite-slider-item">
+          <div class="categories-card">
+            <div class="categories-card-item-top">
+              <div class="categories-card-item-top-discount">
+                <img src="/images/icon8.svg" alt="img">
+              </div>
+              <div class="categories-card-item-top-like">
+                <svg width="40" height="35" viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.7196 1.19971C6.13061 1.19971 1.59961 5.79098 1.59961 11.4543C1.59961 21.7089 13.5596 31.0313 19.9996 33.1997C26.4396 31.0313 38.3996 21.7089 38.3996 11.4543C38.3996 5.79098 33.8686 1.19971 28.2796 1.19971C24.8572 1.19971 21.8304 2.92155 19.9996 5.55699C19.0664 4.2101 17.8267 3.11088 16.3854 2.35241C14.9441 1.59394 13.3437 1.19855 11.7196 1.19971Z"
+                    stroke="#424242" stroke-width="2.13083" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <div class="categories-card-item-image">
+              <img src="/images/img12.png" alt="img">
+            </div>
+            <div class="categories-card-item-name">
+              Black lashes mix Black lashes mix Black lashes mix Black lashes mix Black lashes mix Black lashes mix
+              Black
+              lashes mix Black lashes mix
+            </div>
+            <div class="categories-card-item-type">
+              MIX B 0.07 6-13MM
+            </div>
+            <div class="categories-card-item-bottom">
+              <div class="categories-card-item-bottom-prices">
+                <div class="categories-card-item-bottom-crossed-price">
+                  $1221
+                </div>
+                <div class="categories-card-item-bottom-current-price">
+                  $1221
+                </div>
+              </div>
+              <div class="categories-card-item-bottom-cart-btn">
+                <img src="/images/bag.svg" alt="img">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="profile-favorite-slider-item">
+          <div class="categories-card">
+            <div class="categories-card-item-top">
+              <div class="categories-card-item-top-discount">
+                <img src="/images/icon8.svg" alt="img">
+              </div>
+              <div class="categories-card-item-top-like">
+                <svg width="40" height="35" viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.7196 1.19971C6.13061 1.19971 1.59961 5.79098 1.59961 11.4543C1.59961 21.7089 13.5596 31.0313 19.9996 33.1997C26.4396 31.0313 38.3996 21.7089 38.3996 11.4543C38.3996 5.79098 33.8686 1.19971 28.2796 1.19971C24.8572 1.19971 21.8304 2.92155 19.9996 5.55699C19.0664 4.2101 17.8267 3.11088 16.3854 2.35241C14.9441 1.59394 13.3437 1.19855 11.7196 1.19971Z"
+                    stroke="#424242" stroke-width="2.13083" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <div class="categories-card-item-image">
+              <img src="/images/img12.png" alt="img">
+            </div>
+            <div class="categories-card-item-name">
+              Black lashes mix Black lashes mix Black lashes mix Black lashes mix Black lashes mix Black lashes mix
+              Black
+              lashes mix Black lashes mix
+            </div>
+            <div class="categories-card-item-type">
+              MIX B 0.07 6-13MM
+            </div>
+            <div class="categories-card-item-bottom">
+              <div class="categories-card-item-bottom-prices">
+                <div class="categories-card-item-bottom-crossed-price">
+                  $1221
+                </div>
+                <div class="categories-card-item-bottom-current-price">
+                  $1221
+                </div>
+              </div>
+              <div class="categories-card-item-bottom-cart-btn">
+                <img src="/images/bag.svg" alt="img">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="profile-favorite-slider-item">
+          <div class="categories-card">
+            <div class="categories-card-item-top">
+              <div class="categories-card-item-top-discount">
+                <img src="/images/icon8.svg" alt="img">
+              </div>
+              <div class="categories-card-item-top-like">
+                <svg width="40" height="35" viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.7196 1.19971C6.13061 1.19971 1.59961 5.79098 1.59961 11.4543C1.59961 21.7089 13.5596 31.0313 19.9996 33.1997C26.4396 31.0313 38.3996 21.7089 38.3996 11.4543C38.3996 5.79098 33.8686 1.19971 28.2796 1.19971C24.8572 1.19971 21.8304 2.92155 19.9996 5.55699C19.0664 4.2101 17.8267 3.11088 16.3854 2.35241C14.9441 1.59394 13.3437 1.19855 11.7196 1.19971Z"
+                    stroke="#424242" stroke-width="2.13083" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <div class="categories-card-item-image">
+              <img src="/images/img12.png" alt="img">
+            </div>
+            <div class="categories-card-item-name">
+              Black lashes mix Black lashes mix Black lashes mix Black lashes mix Black lashes mix Black lashes mix
+              Black
+              lashes mix Black lashes mix
+            </div>
+            <div class="categories-card-item-type">
+              MIX B 0.07 6-13MM
+            </div>
+            <div class="categories-card-item-bottom">
+              <div class="categories-card-item-bottom-prices">
+                <div class="categories-card-item-bottom-crossed-price">
+                  $1221
+                </div>
+                <div class="categories-card-item-bottom-current-price">
+                  $1221
+                </div>
+              </div>
+              <div class="categories-card-item-bottom-cart-btn">
+                <img src="/images/bag.svg" alt="img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@5.2.0/js/swiper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/easyzoom@2.5.2/dist/easyzoom.js"></script>
+
+<script>
+  // product Gallery and Zoom
+  /* eslint-disable */
+  // var galleryThumbs = new Swiper('.gallery-thumbs', {
+  //   spaceBetween: 20,
+  //   freeMode: true,
+  //   watchSlidesVisibility: true,
+  //   watchSlidesProgress: true,
+  //   breakpoints: {
+  //     0: {
+  //       slidesPerView: 4,
+  //     },
+  //     992: {
+  //       slidesPerView: 4,
+  //     },
+  //   }
+  // });
+  // var galleryTop = new Swiper('.gallery-top', {
+  //   spaceBetween: 10,
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
+  //   thumbs: {
+  //     swiper: galleryThumbs
+  //   },
+  // });
+
+
+  /* eslint-enable */
+
+</script>
+
+{% endblock %}

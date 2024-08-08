@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>ONRIAL</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/easyzoom@2.5.2/css/easyzoom.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="styles/main.css" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
+
+  {% block styles %} {% endblock %} {% include './components/_page-head.html'
+    %}
+</head>
+
+<body class="{{ body_class }}">
+  {% include 'modals/_cart-popup.html' %}
+  {% include 'modals/_fill-out-form-popup.html' %}
+  {% include 'modals/_promocode-popup.html' %}
+  {% include 'modals/_hello-popup.html' %}
+  {% include 'modals/_become-partner-popup.html' %}
+  {% include 'modals/_thanks-popup.html' %}
+  {% include 'modals/_search-mobile.html' %}
+  {% include 'modals/_training-popup.html' %}
+  {% include 'modals/_questionary-popup.html' %}
+  {% include 'modals/_follow-popup.html' %}
+  {% include 'modals/_review-popup.html' %}
+  {% include 'modals/_cookies-popup.html' %}
+  {% include 'modals/_cookies-preference-popup.html' %}
+  {% include 'modals/_check-email-popup.html' %}
+
+  {% if not isErrorPage %}
+  {% include 'partials/header.html' %}
+  {% include 'partials/mobile-menu.html' %}
+  {% endif %} {% block content %}
+  {% endblock %} {% if not isErrorPage %}
+  {% include 'partials/footer.html' %} {% endif %}
+
+
+  <script src="https://cdn.jsdelivr.net/npm/easyzoom@2.5.2/dist/easyzoom.js"></script>
+  <script src="js/main.js"></script>
+
+  {% include './components/_scripts.html' %} {% block footer_scripts %} {%
+    endblock %}
+</body>
+
+</html>

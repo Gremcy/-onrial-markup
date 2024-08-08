@@ -1,0 +1,211 @@
+.contacts {
+  margin-bottom: 120px;
+  &__container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    & h1 {
+      @include ff-ProximaNova-Regular;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 120%;
+      text-align: center;
+      text-transform: uppercase;
+      color: $primary;
+      margin-bottom: 20px;
+    }
+  }
+  &__subtitle {
+    @include ff-ProximaNova-Light;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: $primary;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &__subtitle-secondary {
+    @include ff-ProximaNova-Regular;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: $primary;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &__inner {
+    margin-bottom: 50px;
+  }
+  &__wrapper {
+    margin-bottom: 60px;
+  }
+  & .contacts__form {
+    padding: 60px 20px;
+    background-color: $background-third;
+    & .contact-form__title {
+      margin-bottom: 40px;
+    }
+    & .contact-form__item {
+      z-index: 0;
+    }
+    & .contact-form__list {
+      margin-bottom: 60px;
+    }
+    & .contact-form__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+  &__thanks {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 581px;
+    background-color: $background-third;
+    padding: 0 44px;
+  }
+  &__icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 40px;
+  }
+  &__title {
+    @include ff-ProximaNova-Regular;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary;
+    margin-bottom: 40px;
+  }
+  &__description {
+    @include ff-ProximaNova-Light;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: 666px) {
+    margin-bottom: 150px;
+    &__container {
+      padding: 0px 70px;
+      & h1 {
+        font-size: 42px;
+        margin-bottom: 25px;
+      }
+    }
+    &__subtitle {
+      font-size: 20px;
+    }
+    &__subtitle-secondary {
+      font-size: 20px;
+    }
+    &__wrapper {
+      margin-bottom: 80px;
+    }
+    & .contacts__form {
+      padding: 70px 50px;
+      & .contact-form__title {
+        margin-bottom: 70px;
+      }
+      & .contact-form__list {
+        margin-bottom: 70px;
+      }
+    }
+    &__thanks {
+      height: 696px;
+      padding: 0 100px;
+    }
+    &__icon {
+      width: 86px;
+      height: 86px;
+      margin-bottom: 70px;
+    }
+    &__title {
+      font-size: 50px;
+      margin-bottom: 28px;
+    }
+    &__description {
+      font-size: 28px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &__container {
+      padding: 0px 100px;
+      display: grid;
+      grid-template-columns: 1fr minmax(510px, 1fr);
+      gap: 90px;
+      & h1 {
+        font-size: 50px;
+        margin-bottom: 18px;
+        text-align: left;
+      }
+    }
+    &__subtitle {
+      text-align: left;
+    }
+    &__subtitle-secondary {
+      text-align: left;
+    }
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.social {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+    & svg {
+      fill: #cb94d3;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  @media (min-width: 666px) {
+    &__item {
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+      & svg {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    &__item {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+      & svg {
+        width: 55px;
+        height: 55px;
+      }
+    }
+  }
+}

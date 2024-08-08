@@ -1,0 +1,105 @@
+.form__item {
+}
+.simple-rating {
+    position: relative;
+    font-size: 27px;
+    letter-spacing: 0.4em;
+    display: inline-block;
+    &::before {
+        content: "★★★★★";
+        display: block;
+        text-shadow: none;
+        color: transparent;
+        -webkit-text-stroke: 1px #cb94d3;
+    }
+}
+.simple-rating__items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    // overflow: hidden;
+}
+.simple-rating__item {
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    opacity: 0%;
+    visibility: hidden;
+}
+.simple-rating__label {
+    flex: 0 0 20%;
+    height: 100%;
+    cursor: pointer;
+    text-shadow: none;
+    color: transparent;
+    -webkit-text-stroke: 1px #cb94d3;
+    &::before {
+        content: "★";
+        display: block;
+        transition: all 0.1s ease;
+    }
+}
+.simple-rating__item:checked,
+.simple-rating__item:checked ~ .simple-rating__label {
+    color: #cb94d3;
+}
+.simple-rating__label:hover,
+.simple-rating__label:hover ~ .simple-rating__label,
+.simple-rating__label:checked ~ .simple-rating__label:hover {
+    color: #cb94d3;
+}
+.rating-title {
+    font-family: "ProximaNova";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #8b8f92;
+    margin-bottom: 15px;
+    @include sm {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+.review-popup-comment {
+    width: 100%;
+    margin-top: 45px;
+    margin-bottom: 70px;
+}
+.review-popup-comment-title {
+    font-family: "ProximaNova";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #8b8f92;
+    margin-bottom: 15px;
+    @include sm {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+.review-popup-comment-textarea {
+    width: 100%;
+    textarea {
+        font-family: "ProximaNova";
+        padding: 20px;
+        width: 100%;
+        height: 115px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 20px;
+        color: #424242;
+        background: #f7f7f7;
+        border: 1px solid #cb94d3;
+    }
+}

@@ -1,0 +1,109 @@
+{% set body_class = "profile-info-page" %}
+{% extends "./_layout.html" %}
+{% block content %}
+
+<main class="profile-info-page">
+  <div class="pagination">
+    <ul class="pagination__list">
+      <li class="pagination__item">
+        <a href="/">Home</a>
+      </li>
+      <li class="pagination__item">
+        <a href="">advice for masters</a>
+      </li>
+      <li class="pagination__item">
+        <a href="">trends</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="profile-logout-fluid">
+    <div class="profile-logout-centered">
+      <div class="profile-logout-btn">
+        Log out
+      </div>
+    </div>
+  </div>
+
+  <div class="profile-tabs-fluid">
+    <div class="profile-tabs-centered">
+      <a href="/profile-info.html" class="profile-tabs-item active">
+        Profile info
+      </a>
+      <a href="/profile-favorite.html" class="profile-tabs-item">
+        favourite
+      </a>
+      <a href="/profile-history.html" class="profile-tabs-item">
+        shopping history
+      </a>
+    </div>
+  </div>
+
+  <div class="profile-info-fluid">
+    <div class="profile-info-centered">
+      <form action="" class="profile-info-form">
+        <div class="profile-info-block">
+          <div class="profile-info-title">
+            edit your personal information
+          </div>
+          <div class="profile-info-input">
+            <input type="text" value="" placeholder="Name">
+            <div class="error-text">Fill in the field</div>
+          </div>
+          <div class="profile-info-input">
+            <input type="text" value="" placeholder="Surname">
+            <div class="error-text">Fill in the field</div>
+          </div>
+          <div class="profile-info-input">
+            <input type="text" value="" placeholder="date of birth">
+            <!-- <div class="profile-info-input-icon">
+              <img src="/images/icon15.svg" alt="img">
+            </div> -->
+            <div class="error-text">Fill in the field</div>
+          </div>
+          <div class="profile-info-input">
+            <input type="text" value="" placeholder="+38 (0_ _) _ _ _   _ _ _  _ _">
+            <div class="error-text">Fill in the field</div>
+          </div>
+          <div class="profile-info-input">
+            <input type="text" value="" placeholder="e-mail">
+            <div class="error-text">Fill in the field</div>
+          </div>
+          <div class="profile-info-pass-btn">
+            update
+          </div>
+        </div>
+        <div class="profile-info-block">
+          <div class="profile-info-pass-top">
+            <div class="profile-info-title">
+              Change password
+            </div>
+            <div class="profile-info-input">
+              <input type="password" value="12345678">
+              <div class="error-text">Fill in the field</div>
+            </div>
+            <div class="profile-info-input">
+              <input type="text" placeholder="new Password">
+              <div class="error-text">Fill in the field</div>
+            </div>
+            <div class="profile-info-input">
+              <input type="text" placeholder="Repeat Password">
+              <div class="error-text">The field is filled in incorrectly</div>
+            </div>
+            <div class="profile-info-pass-btn">
+              Save
+            </div>
+          </div>
+          <!-- <div class="profile-info-discount">
+            <span>2% personal Discount</span>
+            <img src="/images/arrow4.svg" alt="img">
+          </div> -->
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,410 @@
+.registration-page {
+  width: 100%;
+}
+.registration-main {
+  width: 100%;
+  padding-top: 200px;
+  @include md {
+    padding-top: 180px;
+  }
+  @include sm {
+    padding-top: 90px;
+  }
+}
+.registration-form {
+  max-width: 530px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.registration-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #424242;
+  margin-bottom: 60px;
+  @include sm {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+}
+.registration-input {
+  width: 100%;
+  margin-bottom: 45px;
+  font-style: normal;
+  font-weight: 300;
+  font-family: "ProximaNova";
+  font-size: 18px;
+  line-height: 18px;
+  color: #424242;
+  input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color: transparent !important;
+    color: fieldtext !important;
+  }
+  @include sm {
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.form-group {
+  position: relative;
+
+  & + .form-group {
+    margin-top: 30px;
+  }
+
+  &.error {
+    .form-input {
+      border-bottom: 1px solid #d1004b;
+    }
+    .error-text {
+      display: block;
+    }
+    .form-label {
+      transform: translateY(-130%);
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+
+  .error-text {
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    font-style: normal;
+    font-weight: 300;
+    font-family: "ProximaNova";
+    font-size: 12px;
+    line-height: 12px;
+    text-align: right;
+    color: #d1004b;
+    display: none;
+  }
+}
+
+.form-label {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  font-style: normal;
+  font-weight: 300;
+  font-family: "ProximaNova";
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #8b8f92;
+  background-color: #fff;
+  z-index: 10;
+  transition: transform 150ms ease-out, font-size 150ms ease-out;
+  @include sm {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.focused .form-label {
+  transform: translateY(-130%);
+  font-size: 12px;
+  line-height: 12px;
+  @include sm {
+    font-size: 10px;
+    line-height: 10px;
+  }
+}
+
+.form-input {
+  position: relative;
+  padding: 12px 0px 5px 0;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #d8aadf;
+  transition: box-shadow 150ms ease-out;
+
+  &:focus {
+  }
+}
+
+.registration-subscribe {
+  margin-top: 60px;
+  position: relative;
+  @include sm {
+    margin-top: 40px;
+  }
+
+  input[type="checkbox"]:checked,
+  input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
+
+  input[type="checkbox"]:checked + label,
+  input[type="checkbox"]:not(:checked) + label {
+    padding-left: 45px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 300;
+    font-family: "ProximaNova";
+    font-size: 20px;
+    line-height: 140%;
+    color: #424242;
+    @include sm {
+      padding-left: 32px;
+      font-size: 14px;
+      line-height: 140%;
+      display: block;
+    }
+  }
+
+  input[type="checkbox"]:checked + label:before,
+  input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #8b8f92;
+    @include sm {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  input[type="checkbox"]:checked + label:before,
+  input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+  }
+
+  input[type="checkbox"]:checked + label:after,
+  input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    transition: all 0.2s ease;
+  }
+
+  input[type="checkbox"]:checked + label:after,
+  input[type="checkbox"]:not(:checked) + label:after {
+    left: 7px;
+    top: 7px;
+    width: 14px;
+    height: 7px;
+    border-radius: 1px;
+    border-left: 3px solid #8b8f92;
+    border-bottom: 3px solid #8b8f92;
+    transform: rotate(-45deg);
+    @include sm {
+      left: 5px;
+      top: 6px;
+      width: 10px;
+      height: 5px;
+    }
+  }
+
+  input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+  }
+
+  input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  }
+}
+
+.registration-submit-btn {
+  width: 100%;
+  height: 70px;
+  border: none;
+  background: #cb94d3;
+  border-radius: 120px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0 60px;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(108, 92, 111, 0.15);
+  }
+  @include sm {
+    height: 50px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.registration-login-btn {
+  margin-left: auto;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #424242;
+  margin-bottom: 154px;
+  span {
+    display: block;
+    font-style: normal;
+    font-weight: 300;
+    font-family: "ProximaNova";
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #424242;
+    margin-right: 12px;
+  }
+  &:hover {
+    span {
+      font-weight: 400;
+    }
+    svg {
+      path {
+        stroke-width: 2px;
+      }
+    }
+  }
+  @include sm {
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    span {
+      font-size: 16px;
+      line-height: 16px;
+    }
+    img {
+      width: 40px;
+    }
+  }
+}
+
+.registration-sales-news-fluid {
+  width: 100%;
+  background: #cb94d3;
+  padding: 50px 30px;
+  @include sm {
+    padding: 40px 20px;
+  }
+}
+.registration-sales-news-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include md {
+    flex-direction: column;
+  }
+}
+.registration-sales-news-left {
+  width: 52%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+  @include md {
+    text-align: center;
+    width: 78%;
+    font-size: 42px;
+    line-height: 51px;
+    margin-bottom: 40px;
+  }
+  @include sm {
+    width: 100%;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 20px;
+  }
+}
+.registration-sales-news-right {
+  width: 44.355%;
+  @include md {
+    width: 80%;
+  }
+  @include sm {
+    width: 100%;
+  }
+}
+.registration-sales-news-input {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  display: flex;
+  position: relative;
+  input {
+    width: 85%;
+    height: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-family: "ProximaNova";
+    font-size: 20px;
+    line-height: 20px;
+    color: #424242;
+    padding-left: 30px;
+    &::placeholder {
+      font-style: normal;
+      font-weight: 300;
+      font-family: "ProximaNova";
+      font-size: 20px;
+      line-height: 20px;
+      color: #8b8f92;
+    }
+  }
+  &.error {
+    border-bottom: 1px solid #d1004b;
+    .error-text {
+      display: block;
+    }
+  }
+  .error-text {
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    font-style: normal;
+    font-weight: 300;
+    font-family: "ProximaNova";
+    font-size: 12px;
+    line-height: 12px;
+    text-align: right;
+    color: #d1004b;
+    display: none;
+  }
+  @include sm {
+    height: 36px;
+    input {
+      width: 87%;
+      font-size: 16px;
+      line-height: 16px;
+      padding-left: 10px;
+      &::placeholder {
+        font-size: 16px;
+        line-height: 16px;
+      }
+    }
+  }
+}
+.registration-sales-news-send-btn {
+  background: #fff;
+  border: none;
+  height: 100%;
+  cursor: pointer;
+  @include sm {
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

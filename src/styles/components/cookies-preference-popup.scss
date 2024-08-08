@@ -1,0 +1,390 @@
+.cookies-preference-content {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  max-width: 626px;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  padding: 90px 48px 70px;
+  overflow-y: auto;
+  @include md {
+    width: 96%;
+    padding: 60px 30px;
+  }
+  @include sm {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: translate(0%, 0%);
+    padding: 60px 20px;
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 0;
+  }
+}
+
+.cookies-preference-title {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #424242;
+  margin-bottom: 20px;
+  @include sm {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+.cookies-preference-text {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  color: #424242;
+  margin-bottom: 60px;
+  @include sm {
+    font-size: 12px;
+    line-height: 140%;
+    margin-bottom: 30px;
+  }
+}
+.cookies-preferences-checking {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include sm {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.cookies-preferences-cheking-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #424242;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  @include sm {
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+  }
+}
+.cookies-preferences-cheking-check {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #424242;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  @include sm {
+    margin-bottom: 0;
+    margin-top: 5px;
+    padding-left: 70px;
+  }
+}
+
+.lb1 {
+}
+#highload1 {
+  display: none;
+}
+#highload1 + .lb1,
+#highload1 + .lb1::before,
+#highload1 + .lb1::after {
+  transition: all 0.3s;
+}
+#highload1 + .lb1 {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius: 100px;
+  cursor: pointer;
+  @include sm {
+    width: 38px;
+    height: 20px;
+  }
+}
+#highload1 + .lb1::before {
+  display: block;
+  content: attr(data-offlabel);
+  position: absolute;
+  left: -77px;
+  top: 3px;
+  right: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #97a0af;
+  @include sm {
+    font-size: 12px;
+    line-height: 15px;
+    left: -70px;
+  }
+}
+#highload1 + .lb1::after {
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  @include sm {
+    width: 16px;
+    height: 16px;
+    top: 2px;
+  }
+}
+#highload1:checked + .lb1::before {
+  content: attr(data-onlabel);
+  left: -77px;
+  top: 3px;
+  right: auto;
+  color: #cb94d3;
+  @include sm {
+    left: -70px;
+  }
+}
+#highload1:checked + .lb1::after {
+  left: 32px;
+  background-color: #f7f7f7;
+  @include sm {
+    left: 19px;
+  }
+}
+
+#highload1 + .lb1 {
+  background-color: #ccc;
+}
+#highload1:checked + .lb1 {
+  background-color: #cb94d3;
+}
+#highload1:checked + .lb1::before {
+  color: #cb94d3;
+}
+
+.lb2 {
+}
+#highload2 {
+  display: none;
+}
+#highload2 + .lb2,
+#highload2 + .lb2::before,
+#highload2 + .lb2::after {
+  transition: all 0.3s;
+}
+#highload2 + .lb2 {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius: 100px;
+  cursor: pointer;
+  @include sm {
+    width: 38px;
+    height: 20px;
+  }
+}
+#highload2 + .lb2::before {
+  display: block;
+  content: attr(data-offlabel);
+  position: absolute;
+  left: -77px;
+  top: 3px;
+  right: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #97a0af;
+  @include sm {
+    font-size: 12px;
+    line-height: 15px;
+    left: -70px;
+  }
+}
+#highload2 + .lb2::after {
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  @include sm {
+    width: 16px;
+    height: 16px;
+    top: 2px;
+  }
+}
+#highload2:checked + .lb2::before {
+  content: attr(data-onlabel);
+  left: -77px;
+  top: 3px;
+  right: auto;
+  color: #f07d00;
+  @include sm {
+    left: -70px;
+  }
+}
+#highload2:checked + .lb2::after {
+  left: 32px;
+  background-color: #f7f7f7;
+  @include sm {
+    left: 19px;
+  }
+}
+
+#highload2 + .lb2 {
+  background-color: #ccc;
+}
+#highload2:checked + .lb2 {
+  background-color: #cb94d3;
+}
+#highload2:checked + .lb2::before {
+  color: #cb94d3;
+}
+.lb3 {
+}
+#highload3 {
+  display: none;
+}
+#highload3 + .lb3,
+#highload3 + .lb3::before,
+#highload3 + .lb3::after {
+  transition: all 0.3s;
+}
+#highload3 + .lb3 {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius: 100px;
+  cursor: pointer;
+  @include sm {
+    width: 38px;
+    height: 20px;
+  }
+}
+#highload3 + .lb3::before {
+  display: block;
+  content: attr(data-offlabel);
+  position: absolute;
+  left: -77px;
+  top: 3px;
+  right: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #97a0af;
+  @include sm {
+    font-size: 12px;
+    line-height: 15px;
+    left: -70px;
+  }
+}
+#highload3 + .lb3::after {
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  @include sm {
+    width: 16px;
+    height: 16px;
+    top: 2px;
+  }
+}
+#highload3:checked + .lb3::before {
+  content: attr(data-onlabel);
+  left: -77px;
+  top: 3px;
+  right: auto;
+  color: #cb94d3;
+  @include sm {
+    left: -70px;
+  }
+}
+#highload3:checked + .lb3::after {
+  left: 32px;
+  background-color: #f7f7f7;
+  @include sm {
+    left: 19px;
+  }
+}
+
+#highload3 + .lb3 {
+  background-color: #ccc;
+}
+#highload3:checked + .lb3 {
+  background-color: #cb94d3;
+}
+#highload3:checked + .lb3::before {
+  color: #cb94d3;
+}
+
+.cookies-preference-btn-wr {
+}
+.cookies-preference-btn {
+  cursor: pointer;
+  width: 264px;
+  height: 55px;
+  background: #cb94d3;
+  border-radius: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  @include sm {
+    width: 100%;
+    height: 47px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 30px;
+  }
+}
+
+.cookies-preferences-cheking-check {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #cb94d3;
+  @include sm {
+    &.bottom {
+      font-size: 12px;
+      line-height: 15px;
+      text-align: left;
+      padding-left: 0;
+      margin-bottom: 10px;
+    }
+  }
+}

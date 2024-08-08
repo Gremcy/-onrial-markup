@@ -1,0 +1,50 @@
+@include font("ProximaNova-Light", "ProximaNova-Light");
+@include font("ProximaNova-Regular", "ProximaNova-Regular");
+@include font("ProximaNova-Semibold", "ProximaNova-Semibold");
+@include font("ProximaNova-Bold", "ProximaNova-Bold");
+
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 300;
+  src: url("../fonts/ProximaNova-Light.eot");
+  src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ProximaNova-Light.ttf") format("truetype"), url("../fonts/ProximaNova-Light.woff") format("woff"),
+    url("../fonts/ProximaNova-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 400;
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular.woff") format("woff"),
+    url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 600;
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ProximaNova-Semibold.ttf") format("truetype"),
+    url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 700;
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova-Bold.woff") format("woff"),
+    url("../fonts/ProximaNova-Bold.woff2") format("woff2");
+}
+
+@mixin ff-ProximaNova-Light {
+  font-family: "ProximaNova-Light", Arial, Helvetica, sans-serif;
+}
+@mixin ff-ProximaNova-Regular {
+  font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
+}
+@mixin ff-ProximaNova-Semibold {
+  font-family: "ProximaNova-Semibold", Arial, Helvetica, sans-serif;
+}
+@mixin ff-ProximaNova-Bold {
+  font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
+}

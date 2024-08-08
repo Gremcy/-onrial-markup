@@ -1,0 +1,156 @@
+.shipping {
+  padding: 0 20px;
+  margin-bottom: 120px;
+  &__container {
+    max-width: 1240px;
+    margin: 0 auto;
+    & > h1 {
+      @include ff-ProximaNova-Regular;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 120%;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+  }
+  &__image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    @include ff-ProximaNova-Light;
+    font-family: "ProximaNova";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    color: $primary;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  &__description {
+    @include ff-ProximaNova-Regular;
+    font-family: "ProximaNova";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    color: $primary;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    & + .returns__title {
+      margin-top: 30px;
+    }
+  }
+  &__list {
+    margin-bottom: 40px;
+    padding-left: 16px;
+  }
+  &__item {
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: $third;
+      border-radius: 50%;
+      top: 3px;
+      left: -16px;
+    }
+    &-title {
+      @include ff-ProximaNova-Regular;
+      font-family: "ProximaNova";
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 120%;
+      color: $primary;
+      margin-bottom: 10px;
+      & > span {
+        display: block;
+        @include ff-ProximaNova-Light;
+        font-family: "ProximaNova";
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 100%;
+        color: $primary;
+      }
+    }
+    &-description {
+      @include ff-ProximaNova-Light;
+      font-family: "ProximaNova";
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 140%;
+      color: $primary;
+    }
+  }
+
+  @media (min-width: 666px) {
+    padding: 0 30px;
+    &__container {
+      & > h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+    }
+    &__image {
+      margin-bottom: 60px;
+    }
+    &__title {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    &__description {
+      font-size: 20px;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      & + .returns__title {
+        margin-top: 40px;
+      }
+    }
+    &__list {
+      margin-bottom: 60px;
+      padding-left: 25px;
+    }
+    &__item {
+      &:before {
+        width: 10px;
+        height: 10px;
+        top: 6px;
+        left: -25px;
+      }
+      &-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+        & > span {
+          font-size: 18px;
+        }
+      }
+      &-description {
+        font-size: 20px;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    padding: 0 100px;
+    &__container {
+      & > h1 {
+        margin-bottom: 40px;
+      }
+    }
+    &__description {
+      & + .returns__title {
+        margin-top: 50px;
+      }
+    }
+    &__title {
+      margin-bottom: 30px;
+    }
+  }
+}

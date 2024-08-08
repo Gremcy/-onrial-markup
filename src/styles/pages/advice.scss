@@ -1,0 +1,223 @@
+.advice {
+  padding: 0 20px;
+  margin-bottom: 120px;
+  &__container {
+    max-width: 1240px;
+    margin: 0 auto;
+    & > h1 {
+      @include ff-ProximaNova-Regular;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 120%;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+  }
+  &__image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    @include ff-ProximaNova-Light;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    color: $primary;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  &__description {
+    @include ff-ProximaNova-Light;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    color: $primary;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    & + .advice__title {
+      margin-top: 30px;
+    }
+  }
+
+  @media (min-width: 666px) {
+    padding: 0 30px;
+    &__container {
+      & > h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+    }
+    &__image {
+      margin-bottom: 60px;
+    }
+    &__title {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    &__description {
+      font-size: 20px;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      & + .advice__title {
+        margin-top: 40px;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    padding: 0 100px;
+    &__container {
+      & > h1 {
+        margin-bottom: 40px;
+      }
+    }
+    &__description {
+      & + .advice__title {
+        margin-top: 50px;
+      }
+    }
+    &__title {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.advice-about {
+  padding: 0px 20px;
+  margin-bottom: 120px;
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+    li {
+      @include ff-ProximaNova-Light;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 140%;
+      color: $primary;
+      margin-bottom: 10px;
+      strong {
+        @include ff-ProximaNova-Bold;
+        font-weight: 700;
+      }
+      em {
+        font-style: italic;
+      }
+    }
+  }
+  ol {
+    list-style: decimal;
+    padding-left: 20px;
+    li {
+      @include ff-ProximaNova-Light;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 140%;
+      color: $primary;
+      margin-bottom: 10px;
+      strong {
+        @include ff-ProximaNova-Bold;
+        font-weight: 700;
+      }
+      em {
+        font-style: italic;
+      }
+    }
+  }
+  &__container {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  &__image {
+    width: 100%;
+    display: none;
+    &:first-child {
+      display: block;
+    }
+  }
+  &__wrapper {
+    & + .advice-about__description {
+      padding-top: 30px;
+    }
+  }
+  &__title {
+    @include ff-ProximaNova-Bold;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $primary;
+    margin-bottom: 40px;
+  }
+  &__description {
+    @include ff-ProximaNova-Light;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    color: $primary;
+    strong {
+      @include ff-ProximaNova-Bold;
+      font-weight: 700;
+    }
+    em {
+      font-style: italic;
+    }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: 666px) {
+    padding: 0px 30px;
+    margin-bottom: 150px;
+    &__image {
+      display: block;
+    }
+    &__title {
+      font-size: 36px;
+    }
+    &__description {
+      font-size: 20px;
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      & + .advice-about__description {
+        padding-top: 40px;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    padding: 0px 100px;
+    ul {
+      padding-left: 25px;
+      li {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    ol {
+      padding-left: 25px;
+      li {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    &__image {
+      display: block;
+    }
+    &__description {
+      font-size: 20px;
+      margin-bottom: 60px;
+    }
+    &__wrapper {
+      gap: 40px;
+    }
+  }
+}

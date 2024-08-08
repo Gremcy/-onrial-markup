@@ -1,0 +1,134 @@
+{% set body_class = "catalog-page" %} {% extends "./_layout.html" %} {% block
+content %}
+
+<main class="catalog-page">
+  <div class="pagination">
+    <ul class="pagination__list">
+      <li class="pagination__item">
+        <a href="/">Home</a>
+      </li>
+      <li class="pagination__item">
+        <a href="">Catalog</a>
+      </li>
+    </ul>
+  </div>
+  <section class="catalog">
+    <div class="container">
+      <p class="catalog__title">Catalog</p>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <a href="#" class="catalog__link">Glue</a>
+        </li>
+        <li class="catalog__item js__active">
+          <a href="#" class="catalog__link">eyelashes</a>
+        </li>
+        <li class="catalog__item">
+          <a href="#" class="catalog__link">materials</a>
+        </li>
+        <li class="catalog__item">
+          <a href="#" class="catalog__link">tweezers</a>
+        </li>
+        <li class="catalog__item">
+          <a href="#" class="catalog__link">lamination</a>
+        </li>
+        <li class="catalog__item">
+          <a href="#" class="catalog__link">consumables</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="subcatalog">
+    <div class="container">
+      <p class="subcatalog__title">eyelashes</p>
+      <ul class="subcatalog__list">
+        <li class="subcatalog__item">
+          <a href="/" class="subcatalog__link">
+            <img
+              src="./images/catalog-page/subcatalog_1.jpg"
+              alt="subcatalog image"
+              class="subcatalog__image"
+            />
+            <div class="subcatalog__wrapper">
+              <p class="subcatalog__name">BLACK LASHES</p>
+              <img
+                src="./images/main/goods/goods__arrow.svg"
+                alt="subcatalog arrow icon"
+                class="subcatalog__icon"
+              />
+            </div>
+          </a>
+        </li>
+        <li class="subcatalog__item">
+          <a href="/" class="subcatalog__link">
+            <img
+              src="./images/catalog-page/subcatalog_2.jpg"
+              alt="subcatalog image"
+              class="subcatalog__image"
+            />
+            <div class="subcatalog__wrapper">
+              <p class="subcatalog__name">BROWN LASHES</p>
+              <img
+                src="./images/main/goods/goods__arrow.svg"
+                alt="subcatalog arrow icon"
+                class="subcatalog__icon"
+              />
+            </div>
+          </a>
+        </li>
+        <li class="subcatalog__item">
+          <a href="/" class="subcatalog__link">
+            <img
+              src="./images/catalog-page/subcatalog_3.jpg"
+              alt="subcatalog image"
+              class="subcatalog__image"
+            />
+            <div class="subcatalog__wrapper">
+              <p class="subcatalog__name">color LASHES</p>
+              <img
+                src="./images/main/goods/goods__arrow.svg"
+                alt="subcatalog arrow icon"
+                class="subcatalog__icon"
+              />
+            </div>
+          </a>
+        </li>
+        <li class="subcatalog__item">
+          <a href="/" class="subcatalog__link">
+            <img
+              src="./images/catalog-page/subcatalog_3.jpg"
+              alt="subcatalog image"
+              class="subcatalog__image"
+            />
+            <div class="subcatalog__wrapper">
+              <p class="subcatalog__name">color LASHES</p>
+              <img
+                src="./images/main/goods/goods__arrow.svg"
+                alt="subcatalog arrow icon"
+                class="subcatalog__icon"
+              />
+            </div>
+          </a>
+        </li>
+        <li class="subcatalog__item">
+          <a href="/" class="subcatalog__link">
+            <img
+              src="./images/catalog-page/subcatalog_3.jpg"
+              alt="subcatalog image"
+              class="subcatalog__image"
+            />
+            <div class="subcatalog__wrapper">
+              <p class="subcatalog__name">color LASHES</p>
+              <img
+                src="./images/main/goods/goods__arrow.svg"
+                alt="subcatalog arrow icon"
+                class="subcatalog__icon"
+              />
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+{% endblock %}

@@ -1,0 +1,137 @@
+.top-section {
+  position: relative;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  background: url("../images/about-page/top-section_2.jpg") no-repeat center /
+    cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  &__container {
+    padding: 160px 20px 0;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  & h1 {
+    margin-bottom: 50px;
+    z-index: 5;
+  }
+  &__link {
+    z-index: 5;
+    & svg {
+      stroke: $secondary;
+    }
+  }
+
+  @media (min-width: 666px) {
+    &__container {
+      padding: 320px 30px 0;
+    }
+  }
+  @media (min-width: 1200px) {
+    background: url("../images/about-page/top-section_2.jpg") no-repeat center /
+      cover;
+    &__container {
+      padding: 265px 30px 0;
+    }
+  }
+}
+
+.about-page {
+  & > .separator {
+    margin-bottom: 120px;
+  }
+  @media (min-width: 666px) {
+    & > .separator {
+      margin-bottom: 150px;
+    }
+  }
+}
+
+.about-section {
+  padding: 0 20px;
+  margin-bottom: 60px;
+  &__container {
+    max-width: 1240px;
+    margin: 0 auto;
+    border-bottom: 1px solid $grey;
+  }
+  &__title {
+    @include ff-ProximaNova-Regular;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $primary;
+    margin-bottom: 30px;
+  }
+  &__description {
+    @include ff-ProximaNova-Light;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    color: $primary;
+    & + .about__description {
+      padding-top: 20px;
+    }
+  }
+  &__wrapper {
+    margin-bottom: 40px;
+  }
+  &__image {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: 666px) {
+    padding: 0 30px;
+    margin-bottom: 150px;
+    &__title {
+      font-size: 42px;
+      margin-bottom: 40px;
+    }
+    &__description {
+      font-size: 20px;
+    }
+    &__wrapper {
+      margin-bottom: 50px;
+    }
+    &__image {
+      margin-bottom: 150px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 100px;
+    & > .about-section__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    &__title {
+      font-size: 50px;
+    }
+    &__wrapper {
+      margin-bottom: 150px;
+    }
+    &__image {
+      margin-bottom: 150px;
+      order: -1;
+    }
+    &.reverse .about-section__image {
+      margin-bottom: 150px;
+      order: initial;
+    }
+  }
+}

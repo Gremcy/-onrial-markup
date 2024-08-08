@@ -1,0 +1,840 @@
+.partnership-page {
+  & .top-section {
+    position: relative;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    background: url("../images/partnership-page/top-section.jpg") no-repeat center / cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    &__container {
+      padding: 160px 20px 0;
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: initial;
+    }
+    & h1 {
+      margin-bottom: 20px;
+      z-index: 5;
+    }
+    & h2 {
+      z-index: 5;
+      @include ff-ProximaNova-Regular;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 120%;
+      text-transform: uppercase;
+      color: $secondary;
+    }
+
+    @media (min-width: 666px) {
+      &__container {
+        padding: 320px 30px 0;
+      }
+      & h2 {
+        font-size: 32px;
+      }
+    }
+    @media (min-width: 1200px) {
+      background: url("../images/partnership-page/top-section.jpg") no-repeat center / cover;
+      &__container {
+        padding: 300px 100px 0;
+      }
+      & h2 {
+        font-size: 42px;
+      }
+    }
+  }
+}
+
+.partnership-connect {
+  background-color: #f0ddf2;
+  margin-bottom: 120px;
+  &__container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 120px 20px;
+  }
+  &__subtitle {
+    @include ff-ProximaNova-Semibold;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: $primary;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  &__wrapper {
+    margin-bottom: 40px;
+  }
+  & .partnership-contact__form {
+    padding: 60px 20px;
+    background-color: $secondary;
+    & .contact-form__title {
+      margin-bottom: 40px;
+    }
+    & .contact-form__item {
+      z-index: 0;
+    }
+    & .contact-form__list {
+      margin-bottom: 60px;
+    }
+    & .contact-form__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+  &__thanks {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 581px;
+    background-color: $secondary;
+    padding: 0 44px;
+  }
+  &__icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 40px;
+  }
+  &__title {
+    @include ff-ProximaNova-Regular;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary;
+    margin-bottom: 40px;
+  }
+  &__description {
+    @include ff-ProximaNova-Light;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: 666px) {
+    margin-bottom: 150px;
+    &__container {
+      padding: 150px 70px;
+    }
+    &__subtitle {
+      font-size: 28px;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+    &__wrapper {
+      margin-bottom: 50px;
+    }
+    & .partnership-contact__form {
+      padding: 70px 50px;
+      & .contact-form__title {
+        margin-bottom: 70px;
+      }
+      & .contact-form__list {
+        margin-bottom: 70px;
+      }
+    }
+    &__thanks {
+      height: 696px;
+      padding: 0 100px;
+    }
+    &__icon {
+      width: 86px;
+      height: 86px;
+      margin-bottom: 70px;
+    }
+    &__title {
+      font-size: 50px;
+      margin-bottom: 28px;
+    }
+    &__description {
+      font-size: 28px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &__container {
+      padding: 110px 100px;
+      display: grid;
+      grid-template-columns: 1fr minmax(510px, 1fr);
+      gap: 90px;
+    }
+  }
+}
+
+.partnership-terms {
+  &__container {
+    padding: 0 20px;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    @include ff-ProximaNova-Bold;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $primary;
+    margin-bottom: 40px;
+  }
+  &__wrapper {
+    margin-bottom: 40px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &:not(:last-child) {
+      margin-bottom: 62px;
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: #f0ddf2;
+        bottom: -30px;
+        left: 0;
+      }
+    }
+  }
+  &__discount {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-header {
+      margin-bottom: 30px;
+    }
+    &-percent {
+      @include ff-ProximaNova-Bold;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 120%;
+      text-transform: uppercase;
+      color: $third;
+    }
+    &-title {
+      @include ff-ProximaNova-Light;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: $primary;
+    }
+  }
+  &__order {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-header {
+      margin-bottom: 4px;
+    }
+    &-title {
+      @include ff-ProximaNova-Light;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: $primary;
+      margin-bottom: 6px;
+    }
+    &-description {
+      @include ff-ProximaNova-Light;
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 140%;
+      color: $primary;
+    }
+    &-price {
+      @include ff-ProximaNova-Bold;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 120%;
+      text-transform: uppercase;
+      color: $grey;
+    }
+  }
+  &__description {
+    @include ff-ProximaNova-Light;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: $primary;
+  }
+
+  @media (min-width: 768px) {
+    &__container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 30px;
+      margin-bottom: 150px;
+    }
+    &__title {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    &__wrapper {
+      margin-bottom: 50px;
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 78px;
+      flex-direction: initial;
+    }
+    &__item {
+      grid-template-columns: 2fr 3fr;
+      gap: 35px;
+      &:not(:last-child) {
+        margin-bottom: 0px;
+        &:after {
+          width: 2px;
+          height: 100%;
+          top: 0;
+          right: -38px;
+          bottom: initial;
+          left: initial;
+        }
+      }
+    }
+    &__discount {
+      &-header {
+        margin-bottom: 52px;
+      }
+      &-percent {
+        font-size: 30px;
+      }
+      &-title {
+        font-size: 18px;
+      }
+    }
+    &__order {
+      &-header {
+        margin-bottom: 15px;
+      }
+      &-title {
+        font-size: 18px;
+      }
+      &-description {
+        font-size: 12px;
+      }
+      &-price {
+        font-size: 30px;
+      }
+    }
+    &__description {
+      font-size: 16px;
+      line-height: 100%;
+    }
+  }
+  @media (min-width: 1200px) {
+    &__container {
+      padding: 0 100px;
+    }
+    &__wrapper {
+      max-width: 791px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+    &__list {
+      gap: 61px;
+    }
+    &__item {
+      gap: 30px;
+      &:not(:last-child) {
+        &:after {
+          width: 2px;
+          height: 100%;
+          top: 0;
+          right: -20px;
+          bottom: initial;
+          left: initial;
+        }
+      }
+    }
+    &__discount {
+      &-header {
+        margin-bottom: 45px;
+      }
+      &-percent {
+        font-size: 40px;
+      }
+      &-title {
+        font-size: 26px;
+      }
+    }
+    &__order {
+      &-header {
+        margin-bottom: 32px;
+      }
+      &-title {
+        font-size: 26px;
+      }
+      &-description {
+        font-size: 16px;
+      }
+      &-price {
+        font-size: 40px;
+      }
+    }
+  }
+  @media (min-width: 1440px) {
+    &__container {
+      padding: 0 100px;
+    }
+    &__wrapper {
+      margin-bottom: 80px;
+    }
+    &__list {
+      gap: 106px;
+    }
+    &__item {
+      gap: 45px;
+      &:not(:last-child) {
+        &:after {
+          width: 2px;
+          height: 100%;
+          top: 0;
+          right: -45px;
+          bottom: initial;
+          left: initial;
+        }
+      }
+    }
+    &__discount {
+      &-header {
+        margin-bottom: 30px;
+      }
+      &-percent {
+        font-size: 40px;
+      }
+      &-title {
+        font-size: 26px;
+      }
+    }
+    &__order {
+      &-header {
+        margin-bottom: 32px;
+      }
+      &-title {
+        font-size: 30px;
+      }
+      &-description {
+        font-size: 16px;
+      }
+      &-price {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+.partnership-warehouse {
+  max-width: 1280px;
+  padding: 70px 20px 40px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  border-top: 1px solid #8b8f92;
+  border-bottom: 1px solid #8b8f92;
+  &__list {
+    padding: 40px 0 40px 29px;
+    max-width: 1240px;
+    margin: 0 auto;
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &__name {
+    position: relative;
+    margin-bottom: 15px;
+    &-title {
+      @include ff-ProximaNova-Regular;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 120%;
+      color: $primary;
+      text-transform: uppercase;
+    }
+    &-description {
+      @include ff-ProximaNova-Regular;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 120%;
+      color: $primary;
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: $third;
+      top: 6px;
+      left: -29px;
+    }
+  }
+  &__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    &-name {
+      @include ff-ProximaNova-Regular;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 120%;
+      color: $primary;
+      text-transform: uppercase;
+    }
+    &-description {
+      @include ff-ProximaNova-Regular;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 120%;
+      color: $primary;
+      margin-left: 5px;
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: $third;
+      top: 6px;
+      left: -29px;
+    }
+  }
+  @media (min-width: 666px) {
+    &__list {
+      padding: 60px 0;
+      display: grid;
+      grid-template-rows: 1fr;
+      gap: 20px;
+    }
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 0px;
+      }
+      position: initial;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+    &__name {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-bottom: 0px;
+      &-title {
+        font-size: 24px;
+      }
+      &-description {
+        font-size: 12px;
+      }
+      &::before {
+        position: absolute;
+        content: initial;
+        width: initial;
+        height: initial;
+        border-radius: initial;
+        background-color: initial;
+        top: initial;
+        left: initial;
+      }
+    }
+    &__content {
+      display: inline-flex;
+      position: relative;
+      // padding: 0 0 0 45px;
+      &-name {
+        font-size: 24px;
+      }
+      &-description {
+        font-size: 12px;
+        margin-left: 10px;
+      }
+      &:before {
+        position: absolute;
+        content: "";
+        background-color: $third;
+        width: 20px;
+        height: 20px;
+        top: 6px;
+        left: -45px;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    &__name {
+      &-title {
+        font-size: 28px;
+      }
+      &-description {
+        font-size: 16px;
+      }
+      &:before {
+        position: absolute;
+        content: initial;
+        width: initial;
+        height: initial;
+        border-radius: initial;
+        background-color: initial;
+        top: initial;
+        left: initial;
+      }
+    }
+    &__content {
+      display: inline-flex;
+      position: relative;
+      &-name {
+        font-size: 28px;
+      }
+      &-description {
+        font-size: 16px;
+        margin-left: 10px;
+      }
+      &:before {
+        position: absolute;
+        content: "";
+        background-color: $third;
+        width: 20px;
+        height: 20px;
+        top: 6px;
+        left: -45px;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    &__list {
+      padding: 110px 0;
+      gap: 25px;
+    }
+    &__item {
+      gap: 160px;
+      align-items: initial;
+    }
+    &__name {
+      justify-content: flex-start;
+      &-title {
+        font-size: 35px;
+      }
+      &-description {
+        font-size: 22px;
+      }
+    }
+    &__content {
+      align-items: initial;
+      &-name {
+        font-size: 35px;
+      }
+      &-description {
+        font-size: 22px;
+        margin-left: 20px;
+        align-items: center;
+        display: flex;
+      }
+      &:before {
+        position: absolute;
+        content: "";
+        background-color: $third;
+        width: 26px;
+        height: 26px;
+        top: 13px;
+        left: -100px;
+      }
+    }
+  }
+}
+
+.partnership-holds {
+  padding: 60px 0 120px;
+  background-color: $background-third;
+  &__container {
+    padding: 0 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  &__image {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  &__title {
+    @include ff-ProximaNova-Regular;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $primary;
+    margin-bottom: 40px;
+  }
+  &__list {
+    margin-bottom: 30px;
+    list-style-type: disc;
+    padding-left: 16px;
+  }
+  &__item {
+    @include ff-ProximaNova-Semibold;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: $primary;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__description {
+    @include ff-ProximaNova-Regular;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: $primary;
+  }
+
+  @media (min-width: 666px) {
+    padding: 80px 0 150px;
+    &__container {
+      padding: 0 30px;
+    }
+    &__image {
+      margin-bottom: 50px;
+    }
+    &__title {
+      font-size: 50px;
+    }
+    &__list {
+      padding-left: 26px;
+    }
+    &__item {
+      font-size: 28px;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__description {
+      font-size: 28px;
+    }
+  }
+  @media (min-width: 1200px) {
+    &__container {
+      padding: 0 100px;
+      display: grid;
+      grid-template-columns: minmax(375px, 465px) minmax(665px, 1fr);
+      gap: 50px;
+    }
+    &__image {
+      margin-bottom: 0px;
+    }
+    &__title {
+      font-size: 36px;
+    }
+  }
+}
+
+.partnership-warehouse-new-container {
+  max-width: 989px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.partnership-warehouse-new-item {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  &:last-child {
+    margin-left: auto;
+  }
+  @include md {
+    width: 49%;
+  }
+  @include sm {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.partnership-warehouse-new-item-circle {
+  width: 20px;
+  height: 20px;
+  background: #cb94d3;
+  margin-right: 20px;
+  border-radius: 50%;
+  @include md {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+  }
+}
+.partnership-warehouse-new-item-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #424242;
+  @include md {
+    font-size: 21px;
+  }
+  @include sm {
+    font-size: 18px;
+  }
+}
+.partnership-warehouse-new-item-small-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #424242;
+  margin-left: 15px;
+  @include md {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  @include sm {
+    font-size: 12px;
+  }
+}

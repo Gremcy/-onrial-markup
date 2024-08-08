@@ -1,0 +1,75 @@
+{% set body_class = "shipping-page" %} {% extends "./_layout.html" %} {% block
+content %}
+
+<main class="shipping-page">
+  <div class="pagination">
+    <ul class="pagination__list">
+      <li class="pagination__item">
+        <a href="/">Home</a>
+      </li>
+      <li class="pagination__item">
+        <a href="">shipping</a>
+      </li>
+    </ul>
+  </div>
+  <section class="shipping">
+    <div class="shipping__container">
+      <h1 class="primary">Shipping & Delivery</h1>
+      <img
+        src="./images/returns-page/returns_1.jpg"
+        alt="shipping image"
+        class="shipping__image"
+      />
+      <p class="shipping__description">
+        If you place your order Monday through Friday before 3pm, your order willship the same day. You will receive a tracking number the day that your order ships. In some cases, if your order needs extra clarification or customization it may take up to 3-4 business days for processing and verification.If you place an order on the weekend, your order will be processed during working hours. If you require delivery by a specific date please contact us writing to help@onrial.com prior to placing your order
+      </p>
+      <p class="shipping__title">Estimated Delivery Cost</p>
+      <p class="shipping__description">
+        All of our products are sent from Poland warehouse, handled as international shipping. We try our best to make the delivery cost as low aspossible.
+      </p>
+      <p class="shipping__title">Delivery Methods</p>
+      <p class="shipping__description">
+        All of our producThere are couple ways to receive your order. You will be asked to choose one of the shipping methods at the checkout page.
+      </p>
+      <ul class="shipping__list">
+        <li class="shipping__item">
+          <p class="shipping__item-title">Delivery Option 1. DHL<span>(Recommended)</span></p>
+          <p class="shipping__item-description">DHL might be slightly more expensive, but we believe DHL is the fastest and most convenient way to receive your order. DHL estimates a 1 - 7 business day delivery time depends on your location. Please see below for your anticipated transit time based on your location.</p>
+          <p class="shipping__item-description">Asia: 5-7 days
+            US, Canada: 5-7 days
+            Europe: 2-3 days
+            Australia & New Zealand: 5-7 days 
+            Central & South America, Africa: 5-7 days</p>
+        </li>
+        <li class="shipping__item">
+          <p class="shipping__item-title">Delivery Option 2. InPost<span>(Only for Poland)</span></p>
+          <p class="shipping__item-description">Local delivery: 1-3 days</p>
+        </li>
+        <li class="shipping__item">
+          <p class="shipping__item-title">Delivery Option 3. Self-Pick up in Krakow<span>(Only for Poland)</span></p>
+          <p class="shipping__item-description">This method is only recommended for customers who are located nearby our warehouse office. Our address: Poland, Kraków city, Vladyslav Bandurskiego 15 street.Should you wish to arrange your own forwarder to pick up your package from our warehouse in Poland, please choose this option at the checkout and provide all the relevant details by contacting us (тут буде номер телефону)</p>
+        </li>
+      </ul>
+      <p class="shipping__title">How do I track my order?</p>
+      <p class="shipping__description">
+        Each order is sent with a tracking number that you will receive in an emailshortly after your order has fulfilled. Please click the tracking number provided in the body of your email. You can also enter your tracking number at given URL of delivery site.
+If for some reason you have not received the email with tracking number, it is possible that the email address you provided was incorrect or the email has gone to your spam folder.
+Please run a search for the email, if you can't find the email, feel free to contact us, we are happy to help!
+      </p>
+      <p class="shipping__title">My order was delivered to a wrong address</p>
+      <p class="shipping__description">
+        If your order was delivered to a wrong address due to our or shipping company's fault, we will send your original ordered products ASAP at our shipping cost and will provide you with our DHL account so that you can return the wrong products to us.
+        If your order was delivered to a wrong address due to your own mistake(such as typing wrong shipping address), regrettably we will not be responsible for the extra shipping cost and involves rectifying your order.
+      </p>
+      <p class="shipping__description">
+        We recommend you contact the shipping company with your original tracking number and arrange delivery to your correct address.
+        Please note that once products leave our warehouse, it is extremely difficult to change the address of the recipient, so please double check your shipping address before completing your order.
+      </p>
+      <p class="shipping__title">Missing or Lost Packages</p>
+      <p class="shipping__description">
+        Is your order missing or wondering where it is? We are SO sorry for any inconvenience! When your order shipped we sent you an email with tracking information for your order. We recommend checking this trackinglink.
+      </p>
+  </section>
+</main>
+
+{% endblock %}

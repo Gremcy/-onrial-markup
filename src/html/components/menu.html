@@ -1,0 +1,28 @@
+{% set menu = [
+  {
+    name: 'Game',
+    url: '/game'
+  },
+  {
+    name: 'Team',
+    url: '/team'
+  },
+  {
+    name: 'Papers',
+    url: '/papers'
+  },
+  {
+    name: 'NFTS',
+    url: '/nft'
+  }
+] %}
+
+<nav class="menu">
+  <ul class="menu__list">
+    {% for item in menu %}
+      <li class="menu__item">
+        <a href="{{ item.url }}" class="menu__link">{{ item.name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

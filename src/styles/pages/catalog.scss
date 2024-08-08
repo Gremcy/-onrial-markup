@@ -1,0 +1,298 @@
+.pagination {
+  padding: 98px 20px 50px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1240px;
+    margin: 0 auto;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      width: 0px;
+      background: rgba(255, 255, 255, 0);
+    }
+  }
+  &__item {
+    position: relative;
+    margin-bottom: 8px;
+    & a {
+      @include ff-ProximaNova-Light;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 115%;
+      color: $primary;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    &:not(:last-child) a {
+      color: $grey;
+      &:hover {
+        color: $primary;
+        transition: 0.3s ease color;
+      }
+    }
+
+    &:not(:first-child) {
+      margin-left: 10px;
+      padding-left: 30px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0px;
+        width: 20px;
+        height: 13px;
+        background: url("../images/pagination/pagination__button.png") center / cover no-repeat;
+      }
+    }
+    &:last-child a {
+      cursor: default;
+    }
+  }
+  @media (min-width: 666px) {
+    padding: 170px 30px 76px;
+    &__item {
+      & a {
+        font-size: 24px;
+      }
+      &:not(:first-child) {
+        margin-left: 10px;
+        padding-left: 36px;
+        &::before {
+          width: 26px;
+          height: 17px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    padding: 175px 100px 40px;
+    &__item {
+      & a {
+        font-size: 24px;
+        line-height: 24px;
+      }
+      &:not(:first-child) {
+        margin-left: 15px;
+        padding-left: 45px;
+        &::before {
+          width: 30px;
+          height: 19px;
+        }
+      }
+    }
+  }
+}
+
+.catalog {
+  padding: 0 20px;
+  margin-bottom: 60px;
+  & .container {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  &__title {
+    @include ff-ProximaNova-Regular;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $primary;
+    margin-bottom: 40px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  &__item {
+    background-color: $background-secondary;
+    cursor: pointer;
+    transition: 0.3s ease background-color;
+    &:hover {
+      background-color: $third;
+      transition: 0.3s ease background-color;
+    }
+    &:hover .catalog__link {
+      color: $secondary;
+      transition: 0.3s ease color;
+    }
+    &.js__active {
+      background-color: $third;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    @include ff-ProximaNova-Bold;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $primary;
+    transition: 0.3s ease color;
+  }
+
+  @media (min-width: 666px) {
+    padding: 0 30px;
+    margin-bottom: 80px;
+    &__title {
+      font-size: 42px;
+      margin-bottom: 50px;
+    }
+    &__list {
+      gap: 18px;
+    }
+    &__link {
+      padding: 25px 10px;
+      font-size: 28px;
+    }
+  }
+  @media (min-width: 1200px) {
+    padding: 0 80px;
+    &__title {
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 25px;
+    }
+    &__list {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+    &__link {
+      padding: 25px 10px;
+    }
+  }
+}
+
+.subcatalog {
+  padding: 0 20px;
+  margin-bottom: 120px;
+  & .container {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  &__title {
+    @include ff-ProximaNova-Regular;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $primary;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 8px;
+  }
+  &__item {
+    transition: 0.3s ease box-shadow;
+    &:hover {
+      box-shadow: 0px 4px 4px rgba(108, 92, 111, 0.15);
+      transition: 0.3s ease box-shadow;
+    }
+  }
+
+  &__image {
+    height: 185px;
+    width: 100%;
+    object-fit: cover;
+    line-height: 1px;
+  }
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 5px;
+    background-color: $background-third;
+    min-height: 70px;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    @include ff-ProximaNova-Regular;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  @media (min-width: 666px) {
+    padding: 0 21px;
+    margin-bottom: 150px;
+    &__image {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+      line-height: 1px;
+    }
+    &__title {
+      font-size: 42px;
+      margin-bottom: 50px;
+    }
+    &__list {
+      gap: 18px;
+    }
+    &__link {
+      font-size: 32px;
+    }
+    &__wrapper {
+      padding: 40px 20px;
+    }
+    &__icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  @media (min-width: 1200px) {
+    padding: 0 100px;
+    &__title {
+      font-size: 40px;
+    }
+    &__list {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+    &__wrapper {
+      padding: 21px;
+    }
+    &__icon {
+      width: 24px;
+      height: 24px;
+    }
+    &__name {
+      font-size: 23px;
+    }
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1023px) {
+  .top-slider__wrapper {
+    h1 {
+      font-size: 23px;
+    }
+  }
+  .top-slider__wrapper-inner {
+    padding-bottom: 32px;
+  }
+  .mobile-menu__inner {
+    min-height: 10px;
+    height: calc(var(--vh) - 120px);
+    padding-bottom: 20px;
+  }
+}

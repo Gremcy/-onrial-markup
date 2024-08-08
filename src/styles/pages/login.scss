@@ -1,0 +1,30 @@
+.login-page {
+  .registration-login-btn {
+    margin-bottom: 0;
+  }
+}
+
+.login-bottom-area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 150px;
+  @include sm {
+    flex-direction: column;
+    margin-bottom: 120px;
+  }
+}
+.login-forgot-btn {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 140%;
+  color: #424242;
+  @include sm {
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 40px;
+  }
+}

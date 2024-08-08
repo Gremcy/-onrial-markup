@@ -1,0 +1,434 @@
+.quick-main {
+  width: 100%;
+}
+
+.quick-order-container {
+  width: 100%;
+}
+.quick-order-item {
+  padding: 25px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  @include md {
+    padding: 20px 45px;
+    flex-direction: column;
+  }
+  @include sm {
+    padding: 20px 17px;
+  }
+}
+.quick-order-item-left {
+  width: 62.581%;
+  @include md {
+    width: 100%;
+  }
+  @include sm {
+    align-items: flex-start;
+  }
+}
+.quick-order-item-left-product {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+  @include sm {
+    width: 44.143%;
+  }
+}
+.quick-order-item-left-product-img {
+  width: 162px;
+  // height: 140px;
+  margin-right: 25px;
+  flex-shrink: 0;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  @include md {
+    width: 152px;
+    // height: 131px;
+  }
+  @include sm {
+    width: 100%;
+    // height: 116px;
+  }
+}
+.quick-order-item-left-product-desc {
+  width: 37.371%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include sm {
+    position: absolute;
+    left: 0;
+    top: 125px;
+    width: 100%;
+  }
+}
+.quick-order-item-left-product-desc-name {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 107%;
+  color: #424242;
+  @include md {
+    font-size: 20px;
+    line-height: 107%;
+  }
+  @include sm {
+    min-height: 52px;
+    font-size: 16px;
+    line-height: 107%;
+    margin-bottom: 44px;
+  }
+}
+.quick-order-item-left-product-desc-price {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #424242;
+  position: relative;
+  @include md {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.quick-order-item-left-product-desc-price-discoutn {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #8b8f92;
+  text-decoration: line-through;
+  position: absolute;
+  top: -24px;
+  left: 0;
+  @include md {
+    top: -20px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.quick-filters {
+}
+
+.quick-form-select {
+  width: 225px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 10px;
+  border: 1px solid #cb94d3;
+  background: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 13px;
+    right: 16px;
+    background: url("../images/icon20.svg") center center no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 3;
+    @include sm {
+      top: 10px;
+      width: 13px;
+      top: 13px;
+    }
+  }
+
+  .select-css {
+    width: 100%;
+    height: 40px;
+    display: block;
+    background-color: #fff;
+    position: relative;
+    padding: 9px 20px;
+    font-style: normal;
+    font-weight: 300;
+    font-family: "ProximaNova";
+    font-size: 16px;
+    line-height: 140%;
+    color: #424242;
+    border: none;
+    text-transform: lowercase;
+  }
+  .select-css::-ms-expand {
+    display: none;
+  }
+  .select-css:hover {
+    border-color: #888;
+  }
+  .select-css:focus {
+    box-shadow: none;
+  }
+  .select-css option {
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 300;
+    font-family: "ProximaNova";
+    font-size: 16px;
+    line-height: 140%;
+    color: #424242;
+  }
+  @include md {
+    width: 200px;
+    font-size: 20px;
+    .select-css {
+      font-size: 14px;
+      height: 38px;
+    }
+  }
+  @include sm {
+    width: 144px;
+    .select-css {
+      height: 36px;
+    }
+  }
+}
+
+.quick-order-item-right {
+  width: 26.846%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include md {
+    margin-top: 15px;
+    align-self: flex-end;
+    width: 72%;
+  }
+  @include sm {
+    flex-direction: column;
+    width: 144px;
+  }
+}
+.quick-order-item-quantity {
+  width: 102px;
+  height: 49px;
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #424242;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #cb94d3;
+  border-radius: 40px;
+  @include md {
+    width: 95px;
+    height: 41px;
+    padding: 8px 20px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @include sm {
+    width: 90px;
+    height: 39px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+}
+.quick-order-item-quantity-btn-minus {
+  cursor: pointer;
+}
+.quick-order-item-quantity-btn-number {
+}
+.quick-order-item-quantity-btn-plus {
+  cursor: pointer;
+}
+.quick-order-item-add-btn {
+  cursor: pointer;
+  width: 199px;
+  height: 49px;
+  background: #cb94d3;
+  border-radius: 40px;
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include md {
+    width: 200px;
+    height: 41px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  @include sm {
+    width: 100%;
+  }
+}
+
+.quick-order-page {
+  .quick-order-item {
+    width: 100%;
+  }
+  .product-right-info-settings {
+    display: none !important;
+  }
+  .variations_form {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include md {
+      width: 40%;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    @include sm {
+      width: 100%;
+    }
+  }
+  .variations {
+    width: 223px;
+    flex-shrink: 0;
+    margin-right: 40px;
+    @include md {
+      margin-right: 0;
+    }
+    @include sm {
+      width: 100%;
+    }
+  }
+  .quick-order-item-left {
+    width: 100%;
+  }
+  .quick-order-item-left-product {
+    width: 100%;
+    justify-content: flex-start;
+    @include sm {
+      flex-direction: column;
+    }
+  }
+  .externat-form-select {
+    border: 1px solid #cb94d3;
+    margin-bottom: 10px;
+  }
+  .externat-form-select::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 13px;
+    right: 16px;
+    background: url("../images/icon20.svg") center center no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 3;
+  }
+
+  .select-css {
+    width: 100%;
+    height: 40px;
+    display: block;
+    background-color: #fff;
+    position: relative;
+    padding: 9px 20px;
+    font-style: normal;
+    font-weight: 300;
+    font-family: "ProximaNova";
+    font-size: 16px;
+    line-height: 140%;
+    color: #424242;
+    border: none;
+  }
+  .basket-item-product-quantity {
+    width: 102px;
+    height: 49px;
+    @include md {
+      width: 95px;
+      height: 41px;
+    }
+  }
+  .product-right-add-btn {
+    cursor: pointer;
+    width: 199px;
+    height: 49px;
+    background: #cb94d3;
+    border-radius: 40px;
+    font-family: "ProximaNova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    flex-shrink: 0;
+    @include md {
+      width: 200px;
+      height: 41px;
+    }
+  }
+  .product-right-options {
+    position: absolute;
+    bottom: -27px;
+    left: 195px;
+    width: fit-content;
+    border: none;
+    @include md {
+      bottom: 15px;
+      left: 176px;
+    }
+    @include sm {
+      position: relative;
+      bottom: auto;
+      left: auto;
+    }
+  }
+  .product-right-options-price {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .quick-order-item-left-product-desc {
+    width: 30.3%;
+    @include sm {
+      margin-top: 20px;
+      position: relative;
+      width: 100%;
+      top: auto;
+      left: auto;
+    }
+  }
+  .quick-order-item-left-product-desc-name {
+    @include sm {
+      margin-bottom: 20px;
+    }
+  }
+  .product-right-btns {
+    width: 56%;
+
+    @include md {
+      margin-top: 30px;
+      width: 177%;
+    }
+    @include sm {
+      width: 100%;
+    }
+  }
+}

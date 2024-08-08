@@ -1,0 +1,46 @@
+{% set menu = [ { name: 'Хто ми', url: '/about.html' }, { name: 'Альбом', url:
+'/album.html' }, { name: 'Наші партнери', url: '/partners' }, { name: 'Догляд',
+url: '/care' }, { name: 'Контакти', url: '/contacts' } ] %}
+
+<nav class="menu-main">
+  <ul class="menu-main__list">
+    <li class="menu-main__item" data-page="about-page">
+      <a href="/about.html" class="menu-main__link">shop</a>
+    </li>
+    <li class="menu-main__item" data-page="album-page">
+      <!-- <a href="/work.html" class="menu-main__link">partnership</a> -->
+      <div class="menu-main__item-wrapper">
+        <span href="/" class="menu__link">partnership</span>
+        <svg
+          width="12"
+          height="8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M11 1 6.99 7H5.355L1 1" />
+        </svg>
+      </div>
+      <ul class="menu-main__item-subitem subitem__list">
+        <li class="subitem__item">
+          <a href="">Partnership</a>
+        </li>
+        <li class="subitem__item"><a href="">ambassador</a></li>
+        <li class="subitem__item"><a href="">Resources</a></li>
+      </ul>
+    </li>
+    <li class="menu-main__item" data-page="partners-page">
+      <a href="/projects.html" class="menu-main__link">shipping</a>
+    </li>
+    <li class="menu-main__item">
+      <a href="/news.html" class="menu-main__link">about</a>
+    </li>
+    <li class="menu-main__item" data-page="contacts-page">
+      <a href="/knowledge-base.html" class="menu-main__link"
+        >advice for masters</a
+      >
+    </li>
+    <li class="menu-main__item" data-page="contacts-page">
+      <a href="/knowledge-base.html" class="menu-main__link">school</a>
+    </li>
+  </ul>
+</nav>

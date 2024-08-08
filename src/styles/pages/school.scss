@@ -1,0 +1,538 @@
+.school-page {
+  width: 100%;
+}
+.school-main {
+  width: 100%;
+}
+
+.school-first-fluid {
+  width: 100%;
+  padding: 0 100px;
+  @include md {
+    padding: 0 30px;
+  }
+  @include sm {
+    padding: 0 20px;
+  }
+}
+.school-first-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.school-first-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 90px;
+  @include md {
+    gap: 18px;
+  }
+  @include sm {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-bottom: 80px;
+  }
+}
+.school-first-item {
+  &.active {
+    .school-first-item-bottom {
+      background: #f0ddf2;
+      img {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+.school-first-item-images {
+  width: 100%;
+  height: 340px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @include md {
+    height: 335px;
+  }
+  @include sm {
+    height: 240px;
+  }
+}
+.school-first-item-bottom {
+  width: 100%;
+  height: 80px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f7f7f7;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #424242;
+  img {
+    width: 30px;
+  }
+  @include md {
+    height: 105px;
+    padding: 0 20px;
+    img {
+      width: 30px;
+    }
+  }
+  @include sm {
+    height: 64px;
+    font-size: 24px;
+    img {
+      width: 20px;
+    }
+  }
+}
+
+.school-map-fluid {
+  width: 100%;
+  padding: 0 100px;
+  @include md {
+    padding: 0 70px;
+  }
+  @include sm {
+    padding: 0 20px;
+  }
+}
+.school-map-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.school-map-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #424242;
+  margin-bottom: 40px;
+  text-align: center;
+  @include md {
+    font-size: 42px;
+    line-height: 51px;
+    margin-bottom: 40px;
+  }
+  @include sm {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 60px;
+  }
+}
+.school-map-svg {
+  max-width: 529px;
+  width: 100%;
+  margin: 0 auto;
+  svg {
+    width: 100%;
+    height: 500px;
+  }
+  @include md {
+    svg {
+      width: 100%;
+    }
+  }
+  @include sm {
+    svg {
+      height: 85.333vw;
+    }
+  }
+}
+
+.school-map-region {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  fill: #fff;
+  @media (hover: hover) {
+    &:hover {
+      fill: #cb94d3;
+    }
+  }
+  &.select {
+    fill: #cb94d3;
+  }
+}
+
+.school-map-region-text {
+  pointer-events: none;
+}
+
+.school-filters-fluid {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  @include md {
+    margin-top: 30px;
+  }
+  @include sm {
+    margin-top: 50px;
+    margin-bottom: 45px;
+  }
+}
+.school-filters-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.school-filters-title {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "ProximaNova";
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #424242;
+  margin-bottom: 25px;
+  @include sm {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+.externat-form-select {
+  width: 350px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 23px;
+  border: 2px solid #cb94d3;
+  background: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 16px;
+    right: 31px;
+    background: url("../images/icon20.svg") center center no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 3;
+    @include sm {
+      width: 19px;
+      top: 14px;
+    }
+  }
+
+  .select-css {
+    width: 100%;
+    height: 56px;
+    display: block;
+    background-color: #fff;
+    position: relative;
+    padding: 14px 20px;
+    font-style: normal;
+    font-weight: 300;
+    font-family: "ProximaNova";
+    font-size: 20px;
+    line-height: 140%;
+    color: #424242;
+    border: none;
+    text-transform: lowercase;
+    @include md {
+      font-size: 20px;
+    }
+    @include sm {
+      height: 50px;
+      font-size: 16px;
+    }
+  }
+  .select-css::-ms-expand {
+    display: none;
+  }
+  .select-css:hover {
+    border-color: #888;
+  }
+  .select-css:focus {
+    box-shadow: none;
+  }
+  .select-css option {
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 300;
+    font-family: "ProximaNova";
+    font-size: 20px;
+    line-height: 140%;
+    color: #424242;
+  }
+}
+
+.school-instrucrors-fluid {
+  width: 100%;
+  padding: 0 100px;
+  margin-top: 120px;
+  @include md {
+    padding: 0 30px;
+  }
+  @include sm {
+    margin-top: 80px;
+    padding: 0 20px;
+  }
+}
+.school-instrucrors-centered {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.school-instrucrors-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #cb94d3;
+  margin-bottom: 80px;
+  @include md {
+    font-size: 26px;
+    line-height: 26px;
+  }
+  @include sm {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 40px;
+  }
+}
+.school-instrucrors-container {
+  width: 100%;
+}
+.school-instrucrors-item {
+  width: 100%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #f0ddf2;
+  margin-bottom: 40px;
+}
+.school-instrucrors-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include sm {
+    flex-direction: column;
+  }
+}
+.school-instrucrors-item-name {
+  width: 25.403%;
+  span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    color: #424242;
+    display: block;
+  }
+  @include md {
+    width: 22%;
+    span {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+  @include sm {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+.school-instrucrors-item-tel {
+  width: 21.774%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #424242;
+  span {
+    color: #8b8f92;
+  }
+  @include md {
+    width: 16%;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  @include sm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+}
+.school-instrucrors-item-address {
+  width: 25%;
+  display: flex;
+  span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #8b8f92;
+    display: block;
+    margin-right: 10px;
+  }
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #424242;
+  }
+  @include md {
+    width: 30%;
+    span {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  @include sm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+}
+.school-instrucrors-item-social {
+  width: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    display: block;
+  }
+}
+.school-instrucrors-item-region {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+  img {
+    transition: all 0.2s ease;
+  }
+  span {
+    font-weight: 300;
+    font-family: "ProximaNova";
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #cb94d3;
+    display: block;
+    margin-right: 12px;
+  }
+  &.in {
+    img {
+      transform: rotate(180deg);
+    }
+  }
+  @include sm {
+    justify-content: center;
+    span {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}
+
+.school-instrucrors-item-drop {
+  padding-top: 33px;
+  display: none;
+}
+.school-instrucrors-item-drop-el {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 33px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 6px;
+    left: 0;
+    background: #cb94d3;
+    border-radius: 50%;
+  }
+  span {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    color: #424242;
+    margin-right: 15px;
+  }
+  @include sm {
+    &::before {
+      width: 6px;
+      height: 6px;
+    }
+    span {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
+.school-instrucrors-item-drop-el-btn {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #cb94d3;
+  border-bottom: 1px solid #cb94d3;
+  cursor: pointer;
+  @include sm {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.school-footer-textarea {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 20px 30px;
+  background: #fff;
+  textarea {
+    width: 100%;
+    height: 140px;
+    font-style: normal;
+    font-weight: 300;
+    font-family: "ProximaNova";
+    font-size: 20px;
+    line-height: 20px;
+    color: #424242;
+    resize: none;
+    &::placeholder {
+      font-weight: 300;
+      font-family: "ProximaNova";
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #8b8f92;
+    }
+  }
+  @include sm {
+    padding: 20px 10px;
+    textarea {
+      font-size: 16px;
+      &::placeholder {
+        font-size: 16px;
+      }
+    }
+  }
+}

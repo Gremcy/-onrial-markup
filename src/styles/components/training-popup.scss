@@ -1,0 +1,198 @@
+.training-popup-content {
+    max-width: 1240px;
+    width: 95%;
+    height: 95%;
+    max-height: 850px;
+    background: #f7f7f7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    @include md {
+        max-height: 100vh;
+        width: 100%;
+        height: var(--vh);
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+}
+.training-popup-close {
+    position: absolute;
+    top: 34px;
+    right: 34px;
+    img {
+        pointer-events: none;
+    }
+    @include md {
+        top: 30px;
+        right: 30px;
+        width: 23px;
+        height: 23px;
+        img {
+            width: 100%;
+        }
+    }
+    @include sm {
+        top: 15px;
+        right: 15px;
+        width: 15px;
+        height: 15px;
+        img {
+            width: 100%;
+        }
+    }
+}
+.training-popup-content-top {
+    width: 100%;
+    padding: 6% 80px 0 80px;
+    height: 80%;
+    @include md {
+        padding: 80px 0 0 0;
+        height: 751px;
+    }
+    @include sm {
+        padding: 12% 0 0 0;
+        height: 80%;
+    }
+}
+.training-popup-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #424242;
+    text-align: center;
+    margin-bottom: 50px;
+    @include md {
+        font-size: 30px;
+        line-height: 37px;
+    }
+    @include sm {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+.training-popup-container-tabs {
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid #8b8f92;
+}
+.training-popup-container-tabs-item {
+    cursor: pointer;
+    width: 50%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #8b8f92;
+    border-bottom: 5px solid transparent;
+    transform: translateY(2px);
+    &.active {
+        color: #cb94d3;
+        border-bottom: 5px solid #cb94d3;
+    }
+    @include md {
+        font-size: 20px;
+        line-height: 140%;
+    }
+    @include sm {
+        font-size: 12px;
+        line-height: 140%;
+    }
+}
+.training-popup-container {
+    padding: 30px 0;
+    max-height: 71%;
+    overflow-y: auto;
+    // border: 1px solid #000;
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #424242;
+        margin-bottom: 15px;
+    }
+    ul {
+        padding-left: 25px;
+        li {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #424242;
+            margin-bottom: 15px;
+            position: relative;
+            &::before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                background: #cb94d3;
+                border-radius: 50%;
+                position: absolute;
+                top: 7px;
+                left: -25px;
+            }
+        }
+    }
+    @include md {
+        max-height: 82%;
+    }
+    @include sm {
+        max-height: 80%;
+    }
+}
+.training-popup-individual-block {
+    width: 100%;
+    display: none;
+    &.show {
+        display: block;
+    }
+    @include md {
+        padding: 0 30px;
+    }
+}
+.training-popup-school-block {
+    display: none;
+    &.show {
+        display: block;
+    }
+    @include md {
+        padding: 0 30px;
+    }
+}
+.training-popup-content-bottom {
+    border-top: 3px solid #cb94d3;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.training-popup-content-bottom-btn {
+    width: 290px;
+    height: 70px;
+    background: #cb94d3;
+    border-radius: 120px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include sm {
+        width: 234px;
+        height: 54px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

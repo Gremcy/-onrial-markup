@@ -1,0 +1,470 @@
+{% set body_class = "delivery-page" %}
+{% extends "./_layout.html" %}
+{% block content %}
+
+<main class="delivery-main">
+  <div class="delivery-main-920">
+
+    <form action="" class="delivery-step1 show">
+      <div class="delivery-steps-icons">
+        <div class="delivery-steps-icons-line"></div>
+        <div class="delivery-steps-icons-item active">
+          <div class="delivery-steps-icons-item-num">
+            <div class="delivery-steps-icons-item-num-inner">
+              1
+            </div>
+          </div>
+          <div class="delivery-steps-icons-item-name">
+            contact details & delivery
+          </div>
+        </div>
+        <div class="delivery-steps-icons-item">
+          <div class="delivery-steps-icons-item-num">
+            <div class="delivery-steps-icons-item-num-inner">
+              2
+            </div>
+          </div>
+          <div class="delivery-steps-icons-item-name">
+            payment
+          </div>
+        </div>
+        <div class="delivery-steps-icons-item">
+          <div class="delivery-steps-icons-item-num">
+            <div class="delivery-steps-icons-item-num-inner">
+              3
+            </div>
+          </div>
+          <div class="delivery-steps-icons-item-name">
+            summary
+          </div>
+        </div>
+      </div>
+      <div class="delivery-steps-container">
+        <div class="delivery-steps-input half">
+          <input type="text" placeholder="Name">
+          <div class="error-text">
+            Use latin letters
+          </div>
+        </div>
+        <div class="delivery-steps-input half error">
+          <input type="text" placeholder="Surname">
+          <div class="error-text">
+            Use latin letters
+          </div>
+        </div>
+        <div class="delivery-steps-select">
+          <select required class="delivery-select-css">
+            <option value="" disabled selected hidden>Country</option>
+            <option value="ALBANIA">ALBANIA</option>
+            <option value="ANDORRA">ANDORRA</option>
+            <option value="EARGENTINA">ARGENTINA</option>
+            <option value="ALBANIA">ALBANIA</option>
+            <option value="ANDORRA">ANDORRA</option>
+            <option value="EARGENTINA">ARGENTINA</option>
+            <option value="ALBANIA">ALBANIA</option>
+            <option value="ANDORRA">ANDORRA</option>
+            <option value="EARGENTINA">ARGENTINA</option>
+            <option value="ALBANIA">ALBANIA</option>
+            <option value="ANDORRA">ANDORRA</option>
+            <option value="EARGENTINA">ARGENTINA</option>
+            <option value="ALBANIA">ALBANIA</option>
+            <option value="ANDORRA">ANDORRA</option>
+            <option value="EARGENTINA">ARGENTINA</option>
+          </select>
+        </div>
+        <div class="delivery-steps-select">
+          <select required class="delivery-select-css">
+            <option value="" disabled selected hidden>City</option>
+            <option value="ALBANIA">ALBANIA</option>
+            <option value="ANDORRA">ANDORRA</option>
+            <option value="EARGENTINA">ARGENTINA</option>
+            <option value="ALBANIA">ALBANIA</option>
+            <option value="ANDORRA">ANDORRA</option>
+            <option value="EARGENTINA">ARGENTINA</option>
+            <option value="ALBANIA">ALBANIA</option>
+            <option value="ANDORRA">ANDORRA</option>
+            <option value="EARGENTINA">ARGENTINA</option>
+            <option value="ALBANIA">ALBANIA</option>
+            <option value="ANDORRA">ANDORRA</option>
+            <option value="EARGENTINA">ARGENTINA</option>
+            <option value="ALBANIA">ALBANIA</option>
+            <option value="ANDORRA">ANDORRA</option>
+            <option value="EARGENTINA">ARGENTINA</option>
+          </select>
+        </div>
+        <div class="delivery-steps-input">
+          <div class="delivery-steps-input-street-icon">
+            <img src="/images/street-icon.svg" alt="img">
+          </div>
+          <input type="text" placeholder="Street">
+          <div class="error-text">
+            Use latin letters
+          </div>
+        </div>
+        <div class="delivery-steps-input third">
+          <input type="text" placeholder="building">
+          <div class="error-text">
+            Use latin letters
+          </div>
+        </div>
+        <div class="delivery-steps-input third">
+          <input type="text" placeholder="Apartment">
+          <div class="error-text">
+            Use latin letters
+          </div>
+        </div>
+        <div class="delivery-steps-input third">
+          <input type="text" placeholder="Postcode">
+          <div class="error-text">
+            Use latin letters
+          </div>
+        </div>
+        <div class="delivery-steps-input half">
+          <input type="text" placeholder="phone">
+          <div class="error-text">
+            Use latin letters
+          </div>
+        </div>
+        <div class="delivery-steps-input half">
+          <input type="text" placeholder="E-mail">
+          <div class="error-text">
+            Use latin letters
+          </div>
+        </div>
+      </div>
+      <!-- new methods -->
+      <div class="delivery-methods-wrapper">
+        <div class="delivery-chose-method">
+          <div class="delivery-chose-method-title">
+            Choose a delivery method
+          </div>
+          <div class="delivery-chose-method-container">
+            <div class="delivery-chose-method-item">
+              <input type="radio" name="delivery" id="var-2" class="delivery-steps-checkbox">
+                <label class="delivery-steps-methods-item delivery-steps-checkbox-label" for="var-2">
+                  <div class="delivery-chose-method-item-inner">
+                    <div class="delivery-chose-method-item-left">
+                      <div class="delivery-chose-method-item-left-name">
+                        Pickup from Krakow
+                      </div>
+                      <div class="delivery-chose-method-item-left-text">
+                        address:<br>
+                        Vladyslav Bandurskiego 15 str
+                      </div>
+                    </div>
+                    <div class="delivery-chose-method-item-price">
+                      free
+                    </div>
+                  </div>
+                </label>
+            </div>
+            <div class="delivery-chose-method-item">
+              <input type="radio" name="delivery" id="var-3" class="delivery-steps-checkbox">
+                <label class="delivery-steps-methods-item delivery-steps-checkbox-label" for="var-3">
+                  <div class="delivery-chose-method-item-inner">
+                    <div class="delivery-chose-method-item-left">
+                      <div class="delivery-chose-method-item-left-icon">
+                        <img src="/images/inpost.svg" alt="i">
+                      </div>
+                      <div class="delivery-chose-method-item-left-name">
+                        Stripe
+                      </div>
+                    </div>
+                    <div class="delivery-chose-method-item-price">
+                      $12
+                    </div>
+                  </div>
+                </label>
+            </div>
+          </div>
+        </div>
+        <div class="delivery-chose-method payment">
+          <div class="delivery-chose-method-title">
+            Choose a payment system
+          </div>
+          <div class="delivery-chose-method-container">
+            <div class="delivery-chose-method-item">
+              <input type="radio" name="payment" id="var-4" class="delivery-steps-checkbox">
+                <label class="delivery-steps-methods-item delivery-steps-checkbox-label" for="var-4">
+                  <div class="delivery-chose-method-item-inner">
+                    <div class="delivery-chose-method-item-left">
+                      <div class="delivery-chose-method-item-left-icon">
+                        <img src="/images/stripe.svg" alt="i">
+                      </div>
+                      <div class="delivery-chose-method-item-left-name">
+                       Blik
+                      </div>
+                    </div>
+                  </div>
+                </label>
+            </div>
+            <div class="delivery-chose-method-item">
+              <input type="radio" name="payment" id="var-5" class="delivery-steps-checkbox">
+                <label class="delivery-steps-methods-item delivery-steps-checkbox-label" for="var-5">
+                  <div class="delivery-chose-method-item-inner">
+                    <div class="delivery-chose-method-item-left">
+                      <div class="delivery-chose-method-item-left-icon">
+                        <img src="/images/blik.svg" alt="i">
+                      </div>
+                      <div class="delivery-chose-method-item-left-name">
+                        Paypal
+                      </div>
+                    </div>
+                  </div>
+                </label>
+            </div>
+            <div class="delivery-chose-method-item">
+              <input type="radio" name="payment" id="var-6" class="delivery-steps-checkbox">
+                <label class="delivery-steps-methods-item delivery-steps-checkbox-label" for="var-6">
+                  <div class="delivery-chose-method-item-inner">
+                    <div class="delivery-chose-method-item-left">
+                      <div class="delivery-chose-method-item-left-icon">
+                        <img src="/images/paypal.png" alt="i">
+                      </div>
+                      <div class="delivery-chose-method-item-left-name">
+                        Inpost
+                      </div>
+                    </div>
+                  </div>
+                </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="delivery-steps1-down">
+        <div class="delivery-steps1-down-save-address">
+          Save Address
+        </div>
+        <div class="delivery-steps1-down-save-next-btn">
+          <span>Next</span>
+          <img src="/images/arrow1.svg" alt="arr">
+        </div>
+      </div>
+    </form>
+
+    <!-- <form action="" class="delivery-step2">
+      <div class="delivery-steps-icons">
+        <div class="delivery-steps-icons-line"></div>
+        <div class="delivery-steps-icons-item checked">
+          <div class="delivery-steps-icons-item-num">
+            <div class="delivery-steps-icons-item-num-inner">
+              1
+            </div>
+          </div>
+          <div class="delivery-steps-icons-item-name">
+            contact details & delivery
+          </div>
+        </div>
+        <div class="delivery-steps-icons-item active">
+          <div class="delivery-steps-icons-item-num">
+            <div class="delivery-steps-icons-item-num-inner">
+              2
+            </div>
+          </div>
+          <div class="delivery-steps-icons-item-name">
+            payment
+          </div>
+        </div>
+        <div class="delivery-steps-icons-item">
+          <div class="delivery-steps-icons-item-num">
+            <div class="delivery-steps-icons-item-num-inner">
+              3
+            </div>
+          </div>
+          <div class="delivery-steps-icons-item-name">
+            summary
+          </div>
+        </div>
+      </div>
+      <div class="delivery-steps-methods">
+        <div class="delivery-steps-methods-title">
+          Choose a payment system
+        </div>
+        <div class="delivery-steps-methods-container">
+          <input type="radio" name="direction" id="var-5" class="delivery-steps-checkbox">
+          <label class="delivery-steps-methods-item delivery-steps-checkbox-label" for="var-5">
+            <div class="delivery-steps-methods-item-top">
+              <div class="delivery-steps-methods-item-logo">
+                <img src="/images/stripe.svg" alt="img">
+              </div>
+              <div class="delivery-steps-methods-item-name">
+                Stripe
+              </div>
+            </div>
+          </label>
+          <input type="radio" name="direction" id="var-6" class="delivery-steps-checkbox">
+          <label class="delivery-steps-methods-item delivery-steps-checkbox-label" for="var-6">
+            <div class="delivery-steps-methods-item-top">
+              <div class="delivery-steps-methods-item-logo">
+                <img src="/images/blik.svg" alt="img">
+              </div>
+              <div class="delivery-steps-methods-item-name">
+                Blik
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="delivery-steps1-down">
+        <div class="delivery-steps-down-back">
+          <img src="/images/arrow2.svg" alt="arr">
+          <span>Back</span>
+        </div>
+        <div class="delivery-steps1-down-save-next-btn">
+          <span>Next</span>
+          <img src="/images/arrow1.svg" alt="arr">
+        </div>
+      </div>
+    </form> -->
+
+    <form action="" class="delivery-step3">
+      <div class="delivery-steps-icons">
+        <div class="delivery-steps-icons-line"></div>
+        <div class="delivery-steps-icons-item checked">
+          <div class="delivery-steps-icons-item-num">
+            <div class="delivery-steps-icons-item-num-inner">
+              1
+            </div>
+          </div>
+          <div class="delivery-steps-icons-item-name">
+            contact details & delivery
+          </div>
+        </div>
+        <div class="delivery-steps-icons-item checked">
+          <div class="delivery-steps-icons-item-num">
+            <div class="delivery-steps-icons-item-num-inner">
+              2
+            </div>
+          </div>
+          <div class="delivery-steps-icons-item-name">
+            payment
+          </div>
+        </div>
+        <div class="delivery-steps-icons-item active">
+          <div class="delivery-steps-icons-item-num">
+            <div class="delivery-steps-icons-item-num-inner">
+              3
+            </div>
+          </div>
+          <div class="delivery-steps-icons-item-name">
+            summary
+          </div>
+        </div>
+      </div>
+      <div class="delivery-step3-title">
+        summary
+      </div>
+      <div class="delivery-list">
+        <div class="delivery-list-item">
+          <div class="delivery-list-item-title">
+            Всього товарів:
+          </div>
+          <div class="delivery-list-item-right">
+            3
+          </div>
+        </div>
+        <div class="delivery-list-item">
+          <div class="delivery-list-item-title">
+            delivery cost
+          </div>
+          <div class="delivery-list-item-right">
+            $ 32
+          </div>
+        </div>
+        <div class="delivery-list-item">
+          <div class="delivery-list-item-title">
+            total:
+          </div>
+          <div class="delivery-list-item-right">
+            $ 117
+          </div>
+        </div>
+        <div class="delivery-list-item column">
+          <div class="delivery-list-item-title">
+            delivery address
+          </div>
+          <div class="delivery-list-item-right left">
+            Nowy Świat 41A,
+            00-042 Warszawa, Poland
+          </div>
+        </div>
+        <div class="delivery-list-item column">
+          <div class="delivery-list-item-title">
+            selected type of delivery
+          </div>
+          <div class="delivery-list-item-right left">
+            Courier DHL
+          </div>
+        </div>
+        <div class="delivery-list-item column">
+          <div class="delivery-list-item-title">
+            Selected payment method
+          </div>
+          <div class="delivery-list-item-right left">
+            Stripe
+          </div>
+        </div>
+        <div class="delivery-list-item column">
+          <div class="delivery-list-item-title">
+            Add comment to your order
+          </div>
+          <div class="delivery-list-item-right">
+            <textarea class="delivery-list-item-textarea" name="textarea" id="" placeholder="ADD COMMENT"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="delivery-steps1-down">
+        <!-- <div class="delivery-steps-down-back">
+          <img src="/images/arrow2.svg" alt="arr">
+          <span>Back</span>
+        </div> -->
+        <div class="delivery-steps1-down-save-next-btn">
+          <span>order and pay</span>
+        </div>
+      </div>
+    </form>
+
+    <div class="delivery-wrong">
+      <div class="delivery-wrong-icon">
+        <img src="/images/icon6.svg" alt="img">
+      </div>
+      <div class="delivery-wrong-title">
+        something went wrong
+      </div>
+      <div class="delivery-wrong-description">
+        try again<br>
+        or contact with your bank
+      </div>
+      <div class="delivery-wrong-btns">
+        <div class="delivery-wrong-back">
+          Back to the store
+        </div>
+        <div class="delivery-wrong-try">
+          Try again
+        </div>
+      </div>
+    </div>
+
+    <div class="delivery-congratulations">
+      <div class="delivery-congratulations-icon">
+        <img src="/images/check-icon3.svg" alt="img">
+      </div>
+      <div class="delivery-congratulations-title">
+        Congratulations!
+      </div>
+      <div class="delivery-congratulations-description">
+        The payment was successful!
+      </div>
+      <div class="delivery-congratulations-text">
+        The order confirmation will sent to your email.
+      </div>
+      <a href="/" class="delivery-congratulations-btn">
+        Back to the store
+      </a>
+    </div>
+
+  </div>
+</main>
+
+{% endblock %}

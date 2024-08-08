@@ -1,0 +1,69 @@
+{% set body_class = "login-page" %}
+{% extends "./_layout.html" %}
+{% block content %}
+
+<main class="registration-main">
+
+  <form action="" class="registration-form">
+    <div class="registration-title">
+      Log in
+    </div>
+    <div class="registration-input">
+      <div class="form-group">
+        <label class="form-label" for="first">E-mail</label>
+        <input id="first" class="form-input" type="text" />
+        <div class="error-text">
+          Use latin letters
+        </div>
+      </div>
+    </div>
+    <div class="registration-input">
+      <div class="form-group">
+        <label class="form-label" for="first">Password</label>
+        <input id="first" class="form-input" type="text" />
+        <div class="error-text">
+          Use latin letters
+        </div>
+      </div>
+    </div>
+    <div class="registration-subscribe">
+      <input type="checkbox" id="el1"> <label for="el1">
+        Remember me
+      </label>
+    </div>
+    <button type="submit" class="registration-submit-btn">
+      Log in
+    </button>
+    <div class="login-bottom-area">
+      <a href="/" class="login-forgot-btn">
+        <span>forgot password?</span>
+      </a>
+      <a href="/" class="registration-login-btn">
+        <span>registration</span>
+        <svg width="46" height="16" viewBox="0 0 46 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 8L45 8" stroke="#424242"/>
+        <path d="M35.8853 0.5L44.9992 6.81579V9.18421L35.8853 15.5" stroke="#424242"/>
+      </svg>
+      </a>
+    </div>
+  </form>
+
+  <div class="registration-sales-news-fluid">
+    <div class="registration-sales-news-centered">
+      <div class="registration-sales-news-left">
+        be the first to know about sales and news!
+      </div>
+      <div class="registration-sales-news-right">
+        <form action="" class="registration-sales-news-input">
+          <input type="text" placeholder="E-mail">
+          <button type="submit" class="registration-sales-news-send-btn">
+            <img src="/images/icon13.svg" alt="img">
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

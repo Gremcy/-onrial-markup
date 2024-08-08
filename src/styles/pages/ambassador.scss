@@ -1,0 +1,462 @@
+.ambassador {
+  padding: 0 20px;
+  margin-bottom: 120px;
+  &__container {
+    max-width: 1240px;
+    margin: 0 auto;
+    & > h1 {
+      @include ff-ProximaNova-Regular;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 120%;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+  }
+  &__image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    @include ff-ProximaNova-Regular;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: $primary;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (min-width: 666px) {
+    padding: 0 30px;
+    &__container {
+      & > h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+    }
+    &__image {
+      margin-bottom: 60px;
+    }
+    &__description {
+      font-size: 28px;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    padding: 0 100px;
+    &__container {
+      & > h1 {
+        margin-bottom: 40px;
+      }
+    }
+    &__description {
+      font-size: 28px;
+      &:not(:last-child) {
+        margin-bottom: 14px;
+      }
+    }
+  }
+}
+
+.ambassador-about {
+  padding: 60px 20px 120px;
+  background-color: $background-third;
+  &__container {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  &__image {
+    width: 100%;
+    display: none;
+    &:first-child {
+      display: block;
+    }
+  }
+  &__title {
+    @include ff-ProximaNova-Bold;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $primary;
+    margin-bottom: 40px;
+  }
+  &__description {
+    @include ff-ProximaNova-Light;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    color: $primary;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  &__wrapper {
+    & + .ambassador-about__description {
+      padding-top: 30px;
+    }
+  }
+
+  @media (min-width: 666px) {
+    padding: 80px 30px 150px;
+
+    &__image {
+      display: block;
+    }
+    &__title {
+      font-size: 36px;
+    }
+    &__description {
+      font-size: 20px;
+      margin-bottom: 60px;
+    }
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+  }
+  @media (min-width: 1200px) {
+    padding: 80px 100px 150px;
+    &__image {
+      display: block;
+    }
+    &__description {
+      font-size: 20px;
+      margin-bottom: 60px;
+    }
+    &__wrapper {
+      gap: 40px;
+      &__wrapper {
+        & + .ambassador-about__description {
+          padding-top: 60px;
+        }
+      }
+    }
+  }
+}
+
+.ambassador-brand {
+  padding: 0 20px 120px;
+  background-color: $background-third;
+  &__container {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  &__title {
+    @include ff-ProximaNova-Bold;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $primary;
+    margin-bottom: 40px;
+  }
+  &__subtitle {
+    @include ff-ProximaNova-Regular;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: $primary;
+    &:not(:last-child) {
+      margin-bottom: 3px;
+    }
+
+    &.warning {
+      @include ff-ProximaNova-Semibold;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 120%;
+      text-align: center;
+      text-transform: uppercase;
+      color: $third;
+    }
+  }
+  &__list {
+    padding-left: 18px;
+    margin-bottom: 30px;
+  }
+  &__item {
+    @include ff-ProximaNova-Light;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    color: $primary;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: -18px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $third;
+    }
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media (min-width: 666px) {
+    padding: 0 30px 150px;
+    &__title {
+      font-size: 36px;
+    }
+    &__subtitle {
+      font-size: 28px;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      &.warning {
+        font-size: 28px;
+        line-height: 120%;
+      }
+    }
+    &__list {
+      padding-left: 25px;
+      margin-bottom: 60px;
+    }
+    &__item {
+      font-size: 20px;
+      &::before {
+        top: 10px;
+        left: -25px;
+        width: 10px;
+        height: 10px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    padding: 0 100px 150px;
+    &__title {
+      font-size: 36px;
+    }
+    &__subtitle {
+      font-size: 28px;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      &.warning {
+        font-size: 32px;
+      }
+    }
+    &__list {
+      margin-bottom: 0px;
+    }
+    &__inner {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 130px;
+    }
+  }
+}
+
+.ambassador-criteria {
+  padding: 0 20px 80px;
+  background-color: $background-third;
+  &__container {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  &__title {
+    @include ff-ProximaNova-Bold;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $primary;
+    margin-bottom: 40px;
+  }
+  &__subtitle {
+    @include ff-ProximaNova-Regular;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: $primary;
+    &:not(:last-child) {
+      margin-bottom: 3px;
+    }
+
+    &.warning {
+      @include ff-ProximaNova-Semibold;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 120%;
+      text-align: center;
+      text-transform: uppercase;
+      color: $third;
+    }
+  }
+  &__list {
+    padding-left: 18px;
+  }
+  &__item {
+    @include ff-ProximaNova-Light;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    color: $primary;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: -18px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $third;
+    }
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media (min-width: 666px) {
+    padding: 0 30px 80px;
+    &__title {
+      font-size: 36px;
+    }
+    &__subtitle {
+      font-size: 28px;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      &.warning {
+        font-size: 28px;
+        line-height: 120%;
+      }
+    }
+    &__list {
+      padding-left: 25px;
+    }
+    &__item {
+      font-size: 20px;
+      &::before {
+        top: 10px;
+        left: -25px;
+        width: 10px;
+        height: 10px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    padding: 0 100px 80px;
+    &__title {
+      font-size: 36px;
+    }
+    &__subtitle {
+      font-size: 28px;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      &.warning {
+        font-size: 32px;
+      }
+    }
+    &__inner {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 130px;
+    }
+  }
+}
+
+.ambassador-hashtags {
+  padding: 0 20px 60px;
+  background-color: $background-third;
+  &__container {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  &__description {
+    @include ff-ProximaNova-Light;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    color: $primary;
+    margin-bottom: 5px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    @include ff-ProximaNova-Bold;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    color: $third;
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+  @media (min-width: 666px) {
+    padding: 0 30px 80px;
+    &__description {
+      font-size: 20px;
+    }
+    &__item {
+      font-size: 20px;
+    }
+  }
+  @media (min-width: 1200px) {
+    padding: 0 100px 80px;
+    &__container {
+      display: flex;
+    }
+    &__list {
+      margin-left: 10px;
+    }
+  }
+}
+
+.ambassador-contact {
+  padding: 120px 20px;
+  &__container {
+    padding: 0 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  &__title {
+    @include ff-ProximaNova-Bold;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $primary;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: 666px) {
+    padding: 30px 150px;
+    &__container {
+      padding: 0 30px;
+      display: flex;
+    }
+    &__title {
+      font-size: 36px;
+      margin-bottom: 0px;
+      margin-right: 25px;
+    }
+  }
+  @media (min-width: 1200px) {
+    padding: 150px 100px;
+    &__container {
+      padding: 0 100px;
+    }
+  }
+}

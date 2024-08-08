@@ -1,0 +1,17 @@
+@import "helpers/_index";
+@import "variables/_index";
+@import "base/_reset";
+@import "base/_fonts";
+@import "base/_body";
+@import "libs/_index";
+@import "components/_index";
+@import "pages/_index";
+
+* {
+    outline: none !important;
+    box-sizing: border-box;
+    &:focus {
+        outline: none !important;
+        box-shadow: none;
+    }
+}

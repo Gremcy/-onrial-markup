@@ -1,0 +1,96 @@
+.burger {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &.burger-main {
+    span,
+    &:before,
+    &:after {
+      background-color: $secondary;
+    }
+  }
+
+  span,
+  &:before,
+  &:after {
+    display: block;
+    width: 28px;
+    height: 2px;
+    background-color: $secondary;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+  }
+
+  &:before {
+    top: 9px;
+  }
+
+  &:after {
+    bottom: 9px;
+  }
+
+  &.is-open {
+    span,
+    &:before,
+    &:after {
+      background-color: $secondary;
+    }
+    span {
+      opacity: 0;
+    }
+
+    &:before {
+      top: 50%;
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      top: 50%;
+      transform: rotate(45deg);
+    }
+  }
+
+  @media (min-width: 666px) {
+    width: 50px;
+    height: 50px;
+    span,
+    &:before,
+    &:after {
+      display: block;
+      width: 50px;
+      height: 2px;
+      background-color: $secondary;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+    &:before {
+      top: 9px;
+    }
+
+    &:after {
+      bottom: 9px;
+    }
+  }
+}
+
+// .header.is-sticky > .header__inner > .burger span,
+// &:before,
+// &:after {
+//   display: block;
+//   width: 28px;
+//   height: 2px;
+//   background-color: $secondary;
+//   border-radius: 2px;
+//   transition: all 0.3s ease;
+// }
